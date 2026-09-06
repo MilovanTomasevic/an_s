@@ -1,0 +1,1252 @@
+<!doctype html>
+<html lang="ja" dir="ltr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#343541">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="application-name" content="advanexus">
+  <link rel="icon" href="/assets/dist/img/public/advanexus-icon-32.b5f4ba1e3910.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/dist/img/public/advanexus-icon-48.04d163424cb0.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/assets/dist/img/public/advanexus-apple-touch-icon-180.ac7a16998eb1.png" sizes="180x180">
+  <link rel="manifest" href="/site-ja.webmanifest" type="application/manifest+json">
+  <title>ガバナンスされた Dataset｜バージョン管理されたデータ契約とリネージュ</title>
+  <meta name="description" content="データ定義を、不変バージョン、セマンティックなメタデータ、リネージュを持つ安定した Dataset 識別情報へ昇格します。">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  
+  <link rel="canonical" href="https://www.advanexus.com/ja/platform/governed-datasets/">
+  <link rel="alternate" type="application/atom+xml" title="advanexus ガイド" href="https://www.advanexus.com/feed-ja.xml">
+  
+    <link rel="alternate" hreflang="en-GB" href="https://www.advanexus.com/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="en-US" href="https://www.advanexus.com/us/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="de" href="https://www.advanexus.com/de/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="sl" href="https://www.advanexus.com/sl/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="sr-Latn" href="https://www.advanexus.com/sr/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="hu" href="https://www.advanexus.com/hu/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="ar" href="https://www.advanexus.com/ar/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="zh-Hans" href="https://www.advanexus.com/zh/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="ja" href="https://www.advanexus.com/ja/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="sv" href="https://www.advanexus.com/sv/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="es" href="https://www.advanexus.com/es/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="ru" href="https://www.advanexus.com/ru/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="hi" href="https://www.advanexus.com/hi/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="pt-PT" href="https://www.advanexus.com/pt/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="fi-FI" href="https://www.advanexus.com/fi/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="nb-NO" href="https://www.advanexus.com/no/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="nl-NL" href="https://www.advanexus.com/nl/platform/governed-datasets/">
+  
+    <link rel="alternate" hreflang="da-DK" href="https://www.advanexus.com/da/platform/governed-datasets/">
+  
+  
+  
+    <link rel="alternate" hreflang="x-default" href="https://www.advanexus.com/platform/governed-datasets/">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="advanexus">
+  <meta property="og:title" content="ガバナンスされた Dataset｜バージョン管理されたデータ契約とリネージュ">
+  <meta property="og:description" content="データ定義を、不変バージョン、セマンティックなメタデータ、リネージュを持つ安定した Dataset 識別情報へ昇格します。">
+  <meta property="og:url" content="https://www.advanexus.com/ja/platform/governed-datasets/">
+  <meta property="og:image" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta property="og:image:secure_url" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="advanexus — システム、データ、AI 支援業務を横断する企業実行のコントロールと証拠。">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_GB"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="de_DE"><meta property="og:locale:alternate" content="sl_SI"><meta property="og:locale:alternate" content="sr_RS"><meta property="og:locale:alternate" content="hu_HU"><meta property="og:locale:alternate" content="ar_AE"><meta property="og:locale:alternate" content="zh_CN"><meta property="og:locale:alternate" content="sv_SE"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="ru_RU"><meta property="og:locale:alternate" content="hi_IN"><meta property="og:locale:alternate" content="pt_PT"><meta property="og:locale:alternate" content="fi_FI"><meta property="og:locale:alternate" content="nb_NO"><meta property="og:locale:alternate" content="nl_NL"><meta property="og:locale:alternate" content="da_DK">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ガバナンスされた Dataset｜バージョン管理されたデータ契約とリネージュ">
+  <meta name="twitter:description" content="データ定義を、不変バージョン、セマンティックなメタデータ、リネージュを持つ安定した Dataset 識別情報へ昇格します。">
+  <meta name="twitter:image" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta name="twitter:image:alt" content="advanexus — システム、データ、AI 支援業務を横断する企業実行のコントロールと証拠。">
+  <link rel="preload" href="/assets/dist/fonts/SpaceGrotesk-variable.8e085aa43809.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/dist/css/site.f76576626e42.css">
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.advanexus.com/ja/platform/governed-datasets/#webpage","url":"https://www.advanexus.com/ja/platform/governed-datasets/","name":"ガバナンスされた Dataset｜バージョン管理されたデータ契約とリネージュ","description":"データ定義を、不変バージョン、セマンティックなメタデータ、リネージュを持つ安定した Dataset 識別情報へ昇格します。","inLanguage":"ja","isPartOf":{"@id":"https://www.advanexus.com/#website"},"publisher":{"@id":"https://www.advanexus.com/#organization"},"about":{"@id":"https://www.advanexus.com/ja/platform/#topic-platform"},"dateModified":"2026-07-30","breadcrumb":{"@id":"https://www.advanexus.com/ja/platform/governed-datasets/#breadcrumb"}},{"@type":"DefinedTerm","@id":"https://www.advanexus.com/ja/platform/#topic-platform","name":"コントロールと証拠の能力","description":"データ、バージョン、ポリシー、承認、実行、分析、AI 支援業務、成果、証拠をつなぐプラットフォーム能力です。","url":"https://www.advanexus.com/ja/platform/"},{"@type":"BreadcrumbList","@id":"https://www.advanexus.com/ja/platform/governed-datasets/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://www.advanexus.com/ja/"},{"@type":"ListItem","position":2,"name":"プラットフォーム概要","item":"https://www.advanexus.com/ja/platform/"},{"@type":"ListItem","position":3,"name":"ガバナンスされたデータセット","item":"https://www.advanexus.com/ja/platform/governed-datasets/"}]}]}</script>
+  <script src="/assets/dist/js/typing.d72c71ee9cf4.js" defer></script>
+  <script src="/assets/dist/js/form-safety.3b307b166fd8.js" defer></script>
+  <script src="/assets/dist/js/main.8566869dc07e.js" defer></script>
+  
+</head>
+<body data-page-id="platform-governed-datasets" data-page-kind="detail">
+  <a class="skip-link" href="#main-content">メインコンテンツへ移動</a>
+
+  
+  
+  
+  
+  <header class="site-header" data-site-header>
+    <div class="site-header__bar shell">
+      <a class="brand" href="/ja/" aria-label="advanexus ホームページ">
+        
+  <img
+    class="brand__image brand__image--color"
+    src="/assets/dist/img/public/advanexus-wordmark-color.e0d75236a617.webp"
+    width="640"
+    height="102"
+    alt="advanexus"
+    decoding="async"
+    
+  >
+      </a>
+
+      <nav class="site-nav" id="site-navigation" aria-label="メインナビゲーション" data-site-nav>
+        <div class="site-nav__groups">
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>プラットフォーム</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">重要な実行をどのように制御し、証明可能に保つかをご覧ください。</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/platform/">
+                          <span>プラットフォーム概要</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/platform/world/">
+                          <span>身近な状況を選択</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/platform/system-map/">
+                          <span>advanexus の仕組み</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/platform/assurance/">
+                          <span>advanexus Assurance</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/platform/intelligence/">
+                          <span>advanexus Intelligence</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/platform/data-operations/">
+                          <span>データ運用</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link is-current" href="/ja/platform/governed-datasets/" aria-current="page">
+                          <span>ガバナンスされたデータセット</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/platform/controlled-analytics/">
+                          <span>制御された分析</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/platform/anpy/">
+                          <span>ANPy ガバナンス Python</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/platform/data-quality/">
+                          <span>データ品質</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>ソリューション</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">業務課題と測定可能な成果から始めます。</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/industries/">
+                          <span>業界と運用環境</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/solutions/audit-ready-data-operations/">
+                          <span>監査対応データ運用</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/solutions/regulatory-reporting/">
+                          <span>規制報告</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/solutions/controlled-data-migration/">
+                          <span>制御されたデータ移行</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/solutions/trusted-bi-ai-inputs/">
+                          <span>信頼できる BI／AI 入力</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/solutions/governed-analytics-delivery/">
+                          <span>ガバナンスされた分析提供</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/solutions/evidence-backed-investigation/">
+                          <span>証拠に基づく調査</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>信頼</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">コントロール、証拠、製品境界の仕組みを確認します。</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/trust/">
+                          <span>トラストセンター</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/trust/architecture/">
+                          <span>アーキテクチャ</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/trust/security-governance/">
+                          <span>セキュリティとガバナンス</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/trust/evidence-model/">
+                          <span>証拠モデル</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/trust/deployment/">
+                          <span>デプロイメント</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/trust/capability-status/">
+                          <span>ケイパビリティ状態</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/trust/responsible-ai/">
+                          <span>責任ある AI</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>リソース</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">判断に必要な回答、事例、証拠を確認します。</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/resources/">
+                          <span>リソース概要</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/resources/guides/">
+                          <span>ガイドと解説</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/resources/glossary/">
+                          <span>プロダクト用語集</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/resources/changelog/">
+                          <span>ケイパビリティノート</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/faqs/">
+                          <span>よくある質問</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/ja/search/">
+                          <span>公開コンテンツを検索</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+
+          
+            
+              <a class="site-nav__link"
+                 href="/ja/integrations/">
+                インテグレーション
+                
+              </a>
+            
+          
+            
+              <a class="site-nav__link"
+                 href="/ja/pricing/">
+                料金
+                
+              </a>
+            
+          
+        </div>
+
+        <div class="site-nav__actions">
+          
+            
+              <a class="button button--quiet" href="https://live.advanexus.com/" rel="noopener noreferrer">
+                ライブプラットフォームを開く
+                <svg class="icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5 15"/></svg><span class="visually-hidden"> advanexus アプリケーションを開きます</span>
+              </a>
+            
+          
+            
+              <a class="button button--primary" href="/ja/demo-request/">
+                重要なフローについて相談する
+                
+              </a>
+            
+          
+        </div>
+      </nav>
+
+      <div class="site-header__utilities">
+        <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="site-navigation" aria-label="ナビゲーションを開く" data-nav-toggle data-open-label="ナビゲーションを開く" data-close-label="ナビゲーションを閉じる">
+          <span class="nav-toggle__label" data-nav-toggle-label>ナビゲーションを開く</span>
+          <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+
+        
+          <details class="language-switcher" data-language-switcher>
+            <summary class="language-switcher__trigger" aria-controls="language-switcher-panel" aria-label="言語を選択 · 現在の言語: 日本語">
+              <span class="language-switcher__identity" aria-hidden="true">
+                <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇯🇵</span>
+              </span>
+            </summary>
+            <ul class="language-switcher__panel" id="language-switcher-panel" role="list">
+              
+                <li>
+                  <a class="language-switcher__option" href="/platform/governed-datasets/" lang="en-GB" hreflang="en-GB">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇬🇧</span>
+                    <bdi class="language-switcher__name" lang="en-GB" dir="ltr">English (UK)</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/us/platform/governed-datasets/" lang="en-US" hreflang="en-US">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇺🇸</span>
+                    <bdi class="language-switcher__name" lang="en-US" dir="ltr">English (US)</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/de/platform/governed-datasets/" lang="de" hreflang="de">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇩🇪</span>
+                    <bdi class="language-switcher__name" lang="de" dir="ltr">Deutsch</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sl/platform/governed-datasets/" lang="sl" hreflang="sl">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇸🇮</span>
+                    <bdi class="language-switcher__name" lang="sl" dir="ltr">Slovenščina</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sr/platform/governed-datasets/" lang="sr-Latn" hreflang="sr-Latn">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇷🇸</span>
+                    <bdi class="language-switcher__name" lang="sr-Latn" dir="ltr">Srpski</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/hu/platform/governed-datasets/" lang="hu" hreflang="hu">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇭🇺</span>
+                    <bdi class="language-switcher__name" lang="hu" dir="ltr">Magyar</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ar/platform/governed-datasets/" lang="ar" hreflang="ar">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇦🇪</span>
+                    <bdi class="language-switcher__name" lang="ar" dir="rtl">العربية</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/zh/platform/governed-datasets/" lang="zh-Hans" hreflang="zh-Hans">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇨🇳</span>
+                    <bdi class="language-switcher__name" lang="zh-Hans" dir="ltr">简体中文</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ja/platform/governed-datasets/" lang="ja" hreflang="ja" aria-current="page">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇯🇵</span>
+                    <bdi class="language-switcher__name" lang="ja" dir="ltr">日本語</bdi>
+                    
+                      <svg class="icon language-switcher__active-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m4 10 4 4 8-8"/></svg>
+                      <span class="visually-hidden">— 現在の言語</span>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sv/platform/governed-datasets/" lang="sv" hreflang="sv">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇸🇪</span>
+                    <bdi class="language-switcher__name" lang="sv" dir="ltr">Svenska</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/es/platform/governed-datasets/" lang="es" hreflang="es">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇪🇸</span>
+                    <bdi class="language-switcher__name" lang="es" dir="ltr">Español</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ru/platform/governed-datasets/" lang="ru" hreflang="ru">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇷🇺</span>
+                    <bdi class="language-switcher__name" lang="ru" dir="ltr">Русский</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/hi/platform/governed-datasets/" lang="hi" hreflang="hi">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇮🇳</span>
+                    <bdi class="language-switcher__name" lang="hi" dir="ltr">हिन्दी</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/pt/platform/governed-datasets/" lang="pt-PT" hreflang="pt-PT">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇵🇹</span>
+                    <bdi class="language-switcher__name" lang="pt-PT" dir="ltr">Português</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/fi/platform/governed-datasets/" lang="fi-FI" hreflang="fi-FI">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇫🇮</span>
+                    <bdi class="language-switcher__name" lang="fi-FI" dir="ltr">Suomi</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/no/platform/governed-datasets/" lang="nb-NO" hreflang="nb-NO">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇳🇴</span>
+                    <bdi class="language-switcher__name" lang="nb-NO" dir="ltr">Norsk bokmål</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/nl/platform/governed-datasets/" lang="nl-NL" hreflang="nl-NL">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇳🇱</span>
+                    <bdi class="language-switcher__name" lang="nl-NL" dir="ltr">Nederlands</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/da/platform/governed-datasets/" lang="da-DK" hreflang="da-DK">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇩🇰</span>
+                    <bdi class="language-switcher__name" lang="da-DK" dir="ltr">Dansk</bdi>
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          </details>
+        
+
+        <a class="header-search"
+           href="/ja/search/#site-search-query"
+           aria-label="公開サイトを検索"
+           data-header-search>
+          <svg class="header-search__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="10.75" cy="10.75" r="6.25"/>
+            <path d="m15.5 15.5 4.25 4.25"/>
+          </svg>
+          <span class="visually-hidden">公開サイトを検索</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main" tabindex="-1">
+    
+  
+    <nav class="breadcrumbs shell" aria-label="パンくずリスト">
+      <ol role="list">
+        
+          <li>
+            
+              <a href="/ja/">ホーム</a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/ja/platform/">プラットフォーム概要</a>
+            
+          </li>
+        
+          <li aria-current="page">
+            
+              ガバナンスされたデータセット
+            
+          </li>
+        
+      </ol>
+    </nav>
+  
+  <section class="hero hero--detail" aria-labelledby="page-title">
+    <div class="shell hero__layout">
+      <div class="hero__content">
+        <p class="eyebrow ">ガバナンスされた Dataset</p>
+        <h1 id="page-title">データ定義を、明示的なリネージュを持つバージョン管理資産へ変換します。</h1>
+        <p class="hero__lead">Dataset は探索用の SQL と再利用可能なデータ契約を分離します。安定した識別情報、不変のバージョン、セマンティックなメタデータにより、ソースリネージュを隠さずに Report の制御された基盤を作ります。</p>
+        
+        <div class="hero__actions">
+          <a class="button button--primary" href="/ja/platform/controlled-analytics/">制御された Analytics を見る <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="hero__visual">
+  
+  
+  
+  
+  
+  
+  
+    
+  <figure class="product-visual product-visual--versions visual-story" data-visual-contract="version-stack" data-visual-story>
+    <figcaption class="visually-hidden">Dataset は探索用の SQL と再利用可能なデータ契約を分離します。安定した識別情報、不変のバージョン、セマンティックなメタデータにより、ソースリネージュを隠さずに Report の制御された基盤を作ります。</figcaption>
+    <div class="version-stack">
+      
+        <button class="version-card is-active" type="button" data-story-step="0" aria-pressed="true">
+          <span>v1</span>
+          <strong>Dataset は契約であり、名前を変えたクエリ結果ではありません。</strong>
+          <small aria-hidden="true">sha256 · 01</small>
+        </button>
+      
+        <button class="version-card" type="button" data-story-step="1" aria-pressed="false">
+          <span>v2</span>
+          <strong>バージョンは契約の正確な状態を表します。</strong>
+          <small aria-hidden="true">sha256 · 02</small>
+        </button>
+      
+        <button class="version-card" type="button" data-story-step="2" aria-pressed="false">
+          <span>v3</span>
+          <strong>仮想バージョンは行を自動的に固定しません。</strong>
+          <small aria-hidden="true">sha256 · 03</small>
+        </button>
+      
+      <div class="version-diff" aria-hidden="true">
+        <span>−</span><span>+</span><span>→</span>
+      </div>
+      
+        <button class="version-card version-card--binding" type="button" data-story-step="3" aria-pressed="false">
+          <span>04</span>
+          <strong>比較は記録された変更を示し、推測した影響を作りません。</strong>
+        </button>
+      
+        <button class="version-card version-card--binding" type="button" data-story-step="4" aria-pressed="false">
+          <span>05</span>
+          <strong>Dataset と Analytics は責任を分離して保ちます。</strong>
+        </button>
+      
+    </div>
+    
+  <div class="visual-story__readout" data-typewriter-scope>
+    
+      <article class="visual-story__panel" data-story-panel="0">
+        <strong>Dataset は契約であり、名前を変えたクエリ結果ではありません。</strong>
+        <p data-typewriter-copy="body">Dataset はソース/クエリリネージュ、正規化された SQL、列/セマンティックなメタデータ、ライフサイクル状態、不変の DatasetVersion を接続します。SavedQuery は編集可能な SQL のままで、Report は分析上の意図を表します。</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="1">
+        <strong>バージョンは契約の正確な状態を表します。</strong>
+        <p data-typewriter-copy="body">Dataset 所有の SQL、結合、Source、スキーマ、列、列メタデータを変更すると新しい DatasetVersion が作成されます。Analytics 指標、RLS、Report 権限は別契約のままです。既存 ReportVersion は、利用者が新しい DatasetVersion を検証して新しい ReportVersion を保存するまで固定され続けます。</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="2">
+        <strong>仮想バージョンは行を自動的に固定しません。</strong>
+        <p data-typewriter-copy="body">DatasetVersion が稼働中の SQL 契約を保存する場合、後続の実行は同じ定義で新しいソース行を読み取れます。正確な過去の結果再構築には実行ハッシュと保持された成果物、または明示的なマテリアライズされたスナップショットが必要です。</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="3">
+        <strong>比較は記録された変更を示し、推測した影響を作りません。</strong>
+        <p data-typewriter-copy="body">利用者は正規化された SQL、列、型、既知のリネージュメタデータを比較できます。プラットフォームは、未記録関係に対する一律の下流の業務影響分析を主張しません。</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="4">
+        <strong>Dataset と Analytics は責任を分離して保ちます。</strong>
+        <p data-typewriter-copy="body">Dataset は安定したデータ資産とバージョンを所有します。Analytics は指標、RLS、リソース権限、Query Context、Report 実行を所有します。この区別によりガバナンス境界を確認できます。</p>
+      </article>
+    
+    <span class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" data-typewriter-status></span>
+  </div>
+  </figure>
+  </div>
+    </div>
+  </section>
+
+  
+  
+  <section class="content-section content-section--1 content-section--dataset-contract" data-section-visual="dataset-contract" aria-labelledby="section-1-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="01">
+      <p class="section-index" aria-hidden="true">01</p>
+      <h2 id="section-1-title">Dataset は契約であり、名前を変えたクエリ結果ではありません。</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Dataset はソース/クエリリネージュ、正規化された SQL、列/セマンティックなメタデータ、ライフサイクル状態、不変の DatasetVersion を接続します。SavedQuery は編集可能な SQL のままで、Report は分析上の意図を表します。</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+          
+            
+            
+            <div class="content-grid content-grid--dataset-contract content-grid--statements" data-item-layout="statements" data-item-count="3">
+              
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">01</span><span class="content-item__copy">Dataset は SQL Console 実行、SavedQuery、物理的なテーブル、制御された変換から作成できます。</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">02</span><span class="content-item__copy">DatasetColumn は対象バージョンに対する既知のスキーマ／プロファイルメタデータを記録します。</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">03</span><span class="content-item__copy">SQL Console 昇格は所有責任境界を統合せず、カノニカルな Dataset を Analytics セマンティックな投影に整合させます。</span></p></article>
+  
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--2 content-section--dataset-version-stack" data-section-visual="dataset-version-stack" aria-labelledby="section-2-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="02">
+      <p class="section-index" aria-hidden="true">02</p>
+      <h2 id="section-2-title">バージョンは契約の正確な状態を表します。</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Dataset 所有の SQL、結合、Source、スキーマ、列、列メタデータを変更すると新しい DatasetVersion が作成されます。Analytics 指標、RLS、Report 権限は別契約のままです。既存 ReportVersion は、利用者が新しい DatasetVersion を検証して新しい ReportVersion を保存するまで固定され続けます。</p>
+        
+
+        
+
+        
+
+        
+          <p class="section-formula">Report v4 → Dataset v2 · Report v5 → Dataset v2 · Report v6 → Dataset v3</p>
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--3 content-section--virtual-materialized-boundary" data-section-visual="virtual-materialized-boundary" aria-labelledby="section-3-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="03">
+      <p class="section-index" aria-hidden="true">03</p>
+      <h2 id="section-3-title">仮想バージョンは行を自動的に固定しません。</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">DatasetVersion が稼働中の SQL 契約を保存する場合、後続の実行は同じ定義で新しいソース行を読み取れます。正確な過去の結果再構築には実行ハッシュと保持された成果物、または明示的なマテリアライズされたスナップショットが必要です。</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--0 content-section--dataset-diff" data-section-visual="dataset-diff" aria-labelledby="section-4-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="04">
+      <p class="section-index" aria-hidden="true">04</p>
+      <h2 id="section-4-title">比較は記録された変更を示し、推測した影響を作りません。</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">利用者は正規化された SQL、列、型、既知のリネージュメタデータを比較できます。プラットフォームは、未記録関係に対する一律の下流の業務影響分析を主張しません。</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+          
+            
+            
+            <div class="content-grid content-grid--dataset-diff content-grid--statements" data-item-layout="statements" data-item-count="4">
+              
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">01</span><span class="content-item__copy">正確な左側の/右側のバージョン識別情報と SHA-256 SQL 契約</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">02</span><span class="content-item__copy">追加／削除を示す行を認識する SQL 比較</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">03</span><span class="content-item__copy">列、型、NULL 許容、既知のメタデータの変更</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">04</span><span class="content-item__copy">未変更の、変更済みの、追加済みの、削除済みの、利用できないの状態を明示</span></p></article>
+  
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--1 content-section--dataset-analytics-boundary" data-section-visual="dataset-analytics-boundary" aria-labelledby="section-5-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="05">
+      <p class="section-index" aria-hidden="true">05</p>
+      <h2 id="section-5-title">Dataset と Analytics は責任を分離して保ちます。</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Dataset は安定したデータ資産とバージョンを所有します。Analytics は指標、RLS、リソース権限、Query Context、Report 実行を所有します。この区別によりガバナンス境界を確認できます。</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--2 content-section--dataset-report-evolution" data-section-visual="dataset-report-evolution" aria-labelledby="section-6-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="06">
+      <p class="section-index" aria-hidden="true">06</p>
+      <h2 id="section-6-title">発展は明示的な受入判断です。</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">新しい DatasetVersion が既存の Report を黙って移動することはありません。利用者は契約を比較し、ディメンション／指標を検証し、生成されたクエリをプレビューしてから、受け入れ済みの DatasetVersion に紐付けられたされた新しい ReportVersion を保存します。以前の ReportVersion と実行は元のバインディングを保持します。</p>
+        
+
+        
+
+        
+
+        
+
+        
+          <ol class="step-list" role="list">
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">01</span>
+                <div>
+                  <p>Dataset v2 と v3 を比較します。</p>
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">02</span>
+                <div>
+                  <p>変更された SQL、列、型を確認します。</p>
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">03</span>
+                <div>
+                  <p>Dataset v3 に対する Report 下書きを開きます。</p>
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">04</span>
+                <div>
+                  <p>メタデータを検証し、読み取り専用の SQL をコンパイルします。</p>
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">05</span>
+                <div>
+                  <p>現在の権限／RLS コンテキストの下でプレビューします。</p>
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">06</span>
+                <div>
+                  <p>受入後にだけ Report v6 → Dataset v3 を保存します。</p>
+                </div>
+              </li>
+            
+          </ol>
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+    <section class="related-pages" aria-labelledby="related-title">
+      <div class="shell">
+        <div class="related-pages__heading">
+          <p class="eyebrow ">引き続き見る</p>
+          
+    <h2 id="related-title">関連する視点</h2>
+  
+        </div>
+        <div class="related-pages__grid">
+          
+            <a class="related-card" href="/ja/platform/controlled-analytics/">
+              <span class="related-card__eyebrow ">制御された Analytics</span>
+              <strong>データ契約を固定する。実行をガバナンスする。結果を説明する。</strong>
+              <p>制御された Analytics は、Report を正確な DatasetVersion に結び付け、Query Context をサーバー上で検証し、対応済み結果の背後にある権限、RLS、フィルター、バインディング、アーティファクトのコンテキストを保持します。</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+            <a class="related-card" href="/ja/platform/data-quality/">
+              <span class="related-card__eyebrow ">データ品質</span>
+              <strong>品質を、実行後の文書ではなく実行そのものの一部にします。</strong>
+              <p>Data Quality は Source 指向の期待値を、明確な合格条件、永続化された QualityRun、制限された失敗証拠を持つ再実行可能な SQL アサーションへ変換します。</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+            <a class="related-card" href="/ja/solutions/governed-analytics-delivery/">
+              <span class="related-card__eyebrow ">ガバナンスされた Analytics 提供</span>
+              <strong>どのデータ契約、権限、フィルター、Report バージョンが結果を生成したか把握します。</strong>
+              <p>実行時フィルターとサーバー管理の RLS を区別したまま、後から説明するために必要な対象バージョンバインディング／実行コンテキストとともにチャート／ダッシュボードを提供します。</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+        </div>
+      </div>
+    </section>
+  
+  
+  <section class="final-cta" aria-labelledby="final-cta-title">
+    <div class="shell final-cta__layout">
+      <div>
+        <p class="eyebrow ">次のステップ</p>
+        <h2 id="final-cta-title">曖昧さを許容できないフローから始めましょう。</h2>
+      </div>
+      <div>
+        <p>重要なシステム、担当者、ルール、提供責任、証拠要件をお聞かせください。</p>
+        <a class="button button--ink" href="/ja/demo-request/">重要なフローについて相談する <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  
+  
+  
+  
+  <footer class="site-footer">
+    <div class="shell site-footer__layout">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="/ja/" aria-label="advanexus ホームページ">
+          
+  <img
+    class="brand__image brand__image--light"
+    src="/assets/dist/img/public/advanexus-wordmark-light.a39fb51538b6.webp"
+    width="640"
+    height="102"
+    alt="advanexus"
+    decoding="async"
+    loading="lazy" fetchpriority="low"
+  >
+        </a>
+        <div class="site-footer__brand-story" data-footer-brand-story>
+          <p class="brand-story__title"><strong>つながりを保ったまま、前へ。</strong></p>
+          <p class="brand-story__body"><bdi dir="ltr">advanexus</bdi> は <bdi dir="ltr">advance</bdi> と <bdi dir="ltr">nexus</bdi> の融合。データ、意思決定、説明責任、証拠のつながりを切らずに前へ進むことを表します。</p>
+        </div>
+        
+          <nav class="site-footer__orientation" aria-label="つながりを保ったまま、前へ。">
+            <ul role="list">
+              
+                <li>
+                  <a href="/ja/platform/world/" data-footer-orientation-link="business">
+                    <span>身近な状況を選択</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </li>
+              
+              
+                <li>
+                  <a href="/ja/platform/system-map/" data-footer-orientation-link="system">
+                    <span>advanexus の仕組み</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </li>
+              
+            </ul>
+          </nav>
+        
+        
+          <a class="text-link" href="https://live.advanexus.com/" rel="noopener noreferrer">プラットフォームを開く <span aria-hidden="true">↗</span><span class="visually-hidden"> advanexus アプリケーションを開きます</span></a>
+        
+      </div>
+
+      <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+        
+          
+          <section class="site-footer__group" aria-label="プラットフォーム">
+            <h2 class="site-footer__group-heading" id="footer-group-1">プラットフォーム</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-1-summary">プラットフォーム</summary>
+              <ul role="list">
+                
+                  <li><a href="/ja/platform/">プラットフォーム概要</a></li>
+                
+                  <li><a href="/ja/platform/assurance/">advanexus Assurance</a></li>
+                
+                  <li><a href="/ja/platform/intelligence/">advanexus Intelligence</a></li>
+                
+                  <li><a href="/ja/platform/data-operations/">データ運用</a></li>
+                
+                  <li><a href="/ja/platform/controlled-analytics/">制御された分析</a></li>
+                
+                  <li><a href="/ja/advanexus/">advanexus</a></li>
+                
+                  <li><a href="/ja/platform/system-map/">advanexus の仕組み</a></li>
+                
+                  <li><a href="/ja/platform/world/">身近な状況を選択</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="ソリューション">
+            <h2 class="site-footer__group-heading" id="footer-group-2">ソリューション</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-2-summary">ソリューション</summary>
+              <ul role="list">
+                
+                  <li><a href="/ja/solutions/">ソリューション</a></li>
+                
+                  <li><a href="/ja/industries/">業界</a></li>
+                
+                  <li><a href="/ja/integrations/">インテグレーション</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="信頼とリソース">
+            <h2 class="site-footer__group-heading" id="footer-group-3">信頼とリソース</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-3-summary">信頼とリソース</summary>
+              <ul role="list">
+                
+                  <li><a href="/ja/trust/">トラストセンター</a></li>
+                
+                  <li><a href="/ja/trust/capability-status/">ケイパビリティ状態</a></li>
+                
+                  <li><a href="/ja/trust/responsible-ai/">責任ある AI</a></li>
+                
+                  <li><a href="/ja/resources/">リソース</a></li>
+                
+                  <li><a href="/ja/faqs/">よくある質問</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="会社情報と法務">
+            <h2 class="site-footer__group-heading" id="footer-group-4">会社情報と法務</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-4-summary">会社情報と法務</summary>
+              <ul role="list">
+                
+                  <li><a href="/ja/pricing/">料金</a></li>
+                
+                  <li><a href="/ja/company/">会社情報</a></li>
+                
+                  <li><a href="/ja/contact/">お問い合わせ</a></li>
+                
+                  <li><a href="/ja/demo-request/">重要なフローについて相談する</a></li>
+                
+                  <li><a href="/ja/cookie-settings/">Cookie 設定</a></li>
+                
+                  <li><a href="/ja/privacy-policy/">プライバシーポリシー</a></li>
+                
+                  <li><a href="/ja/cookie-policy/">Cookie ポリシー</a></li>
+                
+                  <li><a href="/ja/term-conditions/">利用規約・諸条件</a></li>
+                
+                  <li><a href="/ja/accessibility/">アクセシビリティ</a></li>
+                
+                  <li><a href="/ja/sitemap/">完全なサイトマップ</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+      </nav>
+    </div>
+
+    <div class="shell site-footer__legal">
+      <p>&copy; 2026 advanexus. 無断転載を禁じます。</p>
+      <p>より速く進み、コントロールを維持し、成果を証明します。</p>
+      <a href="mailto:info@advanexus.com">info@advanexus.com</a>
+    </div>
+  </footer>
+
+  
+  <a class="site-return-to-start" href="#page-title"
+     data-back-to-top data-visible="false" aria-label="ページ上部へ戻る">
+    <span class="site-return-to-start__label" aria-hidden="true">ページ上部へ戻る</span>
+    <span class="site-return-to-start__signal" aria-hidden="true">
+      <svg viewBox="0 0 48 48" focusable="false">
+        <circle class="site-return-to-start__track" cx="24" cy="24" r="20" pathLength="100"></circle>
+        <circle class="site-return-to-start__progress" data-back-to-top-progress
+                cx="24" cy="24" r="20" pathLength="100"></circle>
+        <path class="site-return-to-start__arrow" d="M24 34V14M16.5 21.5 24 14l7.5 7.5"></path>
+        <rect class="site-return-to-start__packet" x="21" y="29" width="6" height="6" rx="1"></rect>
+      </svg>
+    </span>
+  </a>
+</body>
+</html>

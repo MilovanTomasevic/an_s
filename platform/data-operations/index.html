@@ -1,0 +1,1291 @@
+<!doctype html>
+<html lang="en-GB" dir="ltr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#343541">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="application-name" content="advanexus">
+  <link rel="icon" href="/assets/dist/img/public/advanexus-icon-32.b5f4ba1e3910.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/dist/img/public/advanexus-icon-48.04d163424cb0.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/assets/dist/img/public/advanexus-apple-touch-icon-180.ac7a16998eb1.png" sizes="180x180">
+  <link rel="manifest" href="/site-en.webmanifest" type="application/manifest+json">
+  <title>Data Operations | Connect, Inspect, Transform and Execute</title>
+  <meta name="description" content="Govern sources, SQL exploration, file transforms, managed tables, quality checks and implemented Pipeline runs.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  
+  <link rel="canonical" href="https://www.advanexus.com/platform/data-operations/">
+  <link rel="alternate" type="application/atom+xml" title="advanexus guides" href="https://www.advanexus.com/feed-en.xml">
+  
+    <link rel="alternate" hreflang="en-GB" href="https://www.advanexus.com/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="en-US" href="https://www.advanexus.com/us/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="de" href="https://www.advanexus.com/de/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="sl" href="https://www.advanexus.com/sl/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="sr-Latn" href="https://www.advanexus.com/sr/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="hu" href="https://www.advanexus.com/hu/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="ar" href="https://www.advanexus.com/ar/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="zh-Hans" href="https://www.advanexus.com/zh/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="ja" href="https://www.advanexus.com/ja/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="sv" href="https://www.advanexus.com/sv/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="es" href="https://www.advanexus.com/es/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="ru" href="https://www.advanexus.com/ru/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="hi" href="https://www.advanexus.com/hi/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="pt-PT" href="https://www.advanexus.com/pt/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="fi-FI" href="https://www.advanexus.com/fi/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="nb-NO" href="https://www.advanexus.com/no/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="nl-NL" href="https://www.advanexus.com/nl/platform/data-operations/">
+  
+    <link rel="alternate" hreflang="da-DK" href="https://www.advanexus.com/da/platform/data-operations/">
+  
+  
+  
+    <link rel="alternate" hreflang="x-default" href="https://www.advanexus.com/platform/data-operations/">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="advanexus">
+  <meta property="og:title" content="Data Operations | Connect, Inspect, Transform and Execute">
+  <meta property="og:description" content="Govern sources, SQL exploration, file transforms, managed tables, quality checks and implemented Pipeline runs.">
+  <meta property="og:url" content="https://www.advanexus.com/platform/data-operations/">
+  <meta property="og:image" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta property="og:image:secure_url" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="advanexus — control and evidence for enterprise execution across systems, data and AI-assisted work.">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="de_DE"><meta property="og:locale:alternate" content="sl_SI"><meta property="og:locale:alternate" content="sr_RS"><meta property="og:locale:alternate" content="hu_HU"><meta property="og:locale:alternate" content="ar_AE"><meta property="og:locale:alternate" content="zh_CN"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="sv_SE"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="ru_RU"><meta property="og:locale:alternate" content="hi_IN"><meta property="og:locale:alternate" content="pt_PT"><meta property="og:locale:alternate" content="fi_FI"><meta property="og:locale:alternate" content="nb_NO"><meta property="og:locale:alternate" content="nl_NL"><meta property="og:locale:alternate" content="da_DK">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Data Operations | Connect, Inspect, Transform and Execute">
+  <meta name="twitter:description" content="Govern sources, SQL exploration, file transforms, managed tables, quality checks and implemented Pipeline runs.">
+  <meta name="twitter:image" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta name="twitter:image:alt" content="advanexus — control and evidence for enterprise execution across systems, data and AI-assisted work.">
+  <link rel="preload" href="/assets/dist/fonts/SpaceGrotesk-variable.8e085aa43809.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/dist/css/site.f76576626e42.css">
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.advanexus.com/platform/data-operations/#webpage","url":"https://www.advanexus.com/platform/data-operations/","name":"Data Operations | Connect, Inspect, Transform and Execute","description":"Govern sources, SQL exploration, file transforms, managed tables, quality checks and implemented Pipeline runs.","inLanguage":"en-GB","isPartOf":{"@id":"https://www.advanexus.com/#website"},"publisher":{"@id":"https://www.advanexus.com/#organization"},"about":{"@id":"https://www.advanexus.com/platform/#topic-platform"},"dateModified":"2026-07-30","breadcrumb":{"@id":"https://www.advanexus.com/platform/data-operations/#breadcrumb"}},{"@type":"DefinedTerm","@id":"https://www.advanexus.com/platform/#topic-platform","name":"Control and evidence capabilities","description":"Product capabilities that connect data operations, analytics, AI-assisted work, approvals, outcomes and evidence.","url":"https://www.advanexus.com/platform/"},{"@type":"BreadcrumbList","@id":"https://www.advanexus.com/platform/data-operations/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.advanexus.com/"},{"@type":"ListItem","position":2,"name":"Platform overview","item":"https://www.advanexus.com/platform/"},{"@type":"ListItem","position":3,"name":"Data operations","item":"https://www.advanexus.com/platform/data-operations/"}]}]}</script>
+  <script src="/assets/dist/js/typing.d72c71ee9cf4.js" defer></script>
+  <script src="/assets/dist/js/form-safety.3b307b166fd8.js" defer></script>
+  <script src="/assets/dist/js/main.8566869dc07e.js" defer></script>
+  
+</head>
+<body data-page-id="platform-data-operations" data-page-kind="detail">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  
+  
+  
+  
+  <header class="site-header" data-site-header>
+    <div class="site-header__bar shell">
+      <a class="brand" href="/" aria-label="advanexus homepage">
+        
+  <img
+    class="brand__image brand__image--color"
+    src="/assets/dist/img/public/advanexus-wordmark-color.e0d75236a617.webp"
+    width="640"
+    height="102"
+    alt="advanexus"
+    decoding="async"
+    
+  >
+      </a>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-site-nav>
+        <div class="site-nav__groups">
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Platform</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">See how critical execution stays controlled and provable.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/platform/">
+                          <span>Platform overview</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/platform/world/">
+                          <span>Choose a situation you recognise</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/platform/system-map/">
+                          <span>How advanexus works</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/platform/assurance/">
+                          <span>advanexus Assurance</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/platform/intelligence/">
+                          <span>advanexus Intelligence</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link is-current" href="/platform/data-operations/" aria-current="page">
+                          <span>Data operations</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/platform/governed-datasets/">
+                          <span>Governed datasets</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/platform/controlled-analytics/">
+                          <span>Controlled analytics</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/platform/anpy/">
+                          <span>ANPy governed Python</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/platform/data-quality/">
+                          <span>Data Quality</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Solutions</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Start with the business problem and measurable outcome.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/industries/">
+                          <span>Industries and operating contexts</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/solutions/audit-ready-data-operations/">
+                          <span>Audit-ready data operations</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/solutions/regulatory-reporting/">
+                          <span>Regulatory reporting</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/solutions/controlled-data-migration/">
+                          <span>Controlled data migration</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/solutions/trusted-bi-ai-inputs/">
+                          <span>Trusted BI and AI inputs</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/solutions/governed-analytics-delivery/">
+                          <span>Governed analytics delivery</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/solutions/evidence-backed-investigation/">
+                          <span>Evidence-backed investigation</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Trust</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Inspect how control, evidence and product boundaries work.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/trust/">
+                          <span>Trust center</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/trust/architecture/">
+                          <span>Architecture</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/trust/security-governance/">
+                          <span>Security and governance</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/trust/evidence-model/">
+                          <span>Evidence model</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/trust/deployment/">
+                          <span>Deployment</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/trust/capability-status/">
+                          <span>Capability status</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/trust/responsible-ai/">
+                          <span>Responsible AI</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Resources</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Answers, examples and evidence for an informed decision.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/resources/">
+                          <span>Resources overview</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/resources/guides/">
+                          <span>Guides and insights</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/resources/glossary/">
+                          <span>Product glossary</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/resources/changelog/">
+                          <span>Capability notes</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/faqs/">
+                          <span>Frequently asked questions</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/search/">
+                          <span>Search public content</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+
+          
+            
+              <a class="site-nav__link"
+                 href="/integrations/">
+                Integrations
+                
+              </a>
+            
+          
+            
+              <a class="site-nav__link"
+                 href="/pricing/">
+                Pricing
+                
+              </a>
+            
+          
+        </div>
+
+        <div class="site-nav__actions">
+          
+            
+              <a class="button button--quiet" href="https://live.advanexus.com/" rel="noopener noreferrer">
+                Open live platform
+                <svg class="icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5 15"/></svg><span class="visually-hidden"> Opens the advanexus application</span>
+              </a>
+            
+          
+            
+              <a class="button button--primary" href="/demo-request/">
+                Discuss a critical flow
+                
+              </a>
+            
+          
+        </div>
+      </nav>
+
+      <div class="site-header__utilities">
+        <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation" data-nav-toggle data-open-label="Open navigation" data-close-label="Close navigation">
+          <span class="nav-toggle__label" data-nav-toggle-label>Open navigation</span>
+          <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+
+        
+          <details class="language-switcher" data-language-switcher>
+            <summary class="language-switcher__trigger" aria-controls="language-switcher-panel" aria-label="Choose language · Current language: English (UK)">
+              <span class="language-switcher__identity" aria-hidden="true">
+                <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇬🇧</span>
+              </span>
+            </summary>
+            <ul class="language-switcher__panel" id="language-switcher-panel" role="list">
+              
+                <li>
+                  <a class="language-switcher__option" href="/platform/data-operations/" lang="en-GB" hreflang="en-GB" aria-current="page">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇬🇧</span>
+                    <bdi class="language-switcher__name" lang="en-GB" dir="ltr">English (UK)</bdi>
+                    
+                      <svg class="icon language-switcher__active-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m4 10 4 4 8-8"/></svg>
+                      <span class="visually-hidden">— Current language</span>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/us/platform/data-operations/" lang="en-US" hreflang="en-US">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇺🇸</span>
+                    <bdi class="language-switcher__name" lang="en-US" dir="ltr">English (US)</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/de/platform/data-operations/" lang="de" hreflang="de">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇩🇪</span>
+                    <bdi class="language-switcher__name" lang="de" dir="ltr">Deutsch</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sl/platform/data-operations/" lang="sl" hreflang="sl">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇸🇮</span>
+                    <bdi class="language-switcher__name" lang="sl" dir="ltr">Slovenščina</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sr/platform/data-operations/" lang="sr-Latn" hreflang="sr-Latn">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇷🇸</span>
+                    <bdi class="language-switcher__name" lang="sr-Latn" dir="ltr">Srpski</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/hu/platform/data-operations/" lang="hu" hreflang="hu">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇭🇺</span>
+                    <bdi class="language-switcher__name" lang="hu" dir="ltr">Magyar</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ar/platform/data-operations/" lang="ar" hreflang="ar">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇦🇪</span>
+                    <bdi class="language-switcher__name" lang="ar" dir="rtl">العربية</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/zh/platform/data-operations/" lang="zh-Hans" hreflang="zh-Hans">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇨🇳</span>
+                    <bdi class="language-switcher__name" lang="zh-Hans" dir="ltr">简体中文</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ja/platform/data-operations/" lang="ja" hreflang="ja">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇯🇵</span>
+                    <bdi class="language-switcher__name" lang="ja" dir="ltr">日本語</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sv/platform/data-operations/" lang="sv" hreflang="sv">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇸🇪</span>
+                    <bdi class="language-switcher__name" lang="sv" dir="ltr">Svenska</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/es/platform/data-operations/" lang="es" hreflang="es">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇪🇸</span>
+                    <bdi class="language-switcher__name" lang="es" dir="ltr">Español</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ru/platform/data-operations/" lang="ru" hreflang="ru">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇷🇺</span>
+                    <bdi class="language-switcher__name" lang="ru" dir="ltr">Русский</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/hi/platform/data-operations/" lang="hi" hreflang="hi">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇮🇳</span>
+                    <bdi class="language-switcher__name" lang="hi" dir="ltr">हिन्दी</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/pt/platform/data-operations/" lang="pt-PT" hreflang="pt-PT">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇵🇹</span>
+                    <bdi class="language-switcher__name" lang="pt-PT" dir="ltr">Português</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/fi/platform/data-operations/" lang="fi-FI" hreflang="fi-FI">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇫🇮</span>
+                    <bdi class="language-switcher__name" lang="fi-FI" dir="ltr">Suomi</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/no/platform/data-operations/" lang="nb-NO" hreflang="nb-NO">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇳🇴</span>
+                    <bdi class="language-switcher__name" lang="nb-NO" dir="ltr">Norsk bokmål</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/nl/platform/data-operations/" lang="nl-NL" hreflang="nl-NL">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇳🇱</span>
+                    <bdi class="language-switcher__name" lang="nl-NL" dir="ltr">Nederlands</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/da/platform/data-operations/" lang="da-DK" hreflang="da-DK">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇩🇰</span>
+                    <bdi class="language-switcher__name" lang="da-DK" dir="ltr">Dansk</bdi>
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          </details>
+        
+
+        <a class="header-search"
+           href="/search/#site-search-query"
+           aria-label="Search the public site"
+           data-header-search>
+          <svg class="header-search__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="10.75" cy="10.75" r="6.25"/>
+            <path d="m15.5 15.5 4.25 4.25"/>
+          </svg>
+          <span class="visually-hidden">Search the public site</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main" tabindex="-1">
+    
+  
+    <nav class="breadcrumbs shell" aria-label="Breadcrumbs">
+      <ol role="list">
+        
+          <li>
+            
+              <a href="/">Home</a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/platform/">Platform overview</a>
+            
+          </li>
+        
+          <li aria-current="page">
+            
+              Data operations
+            
+          </li>
+        
+      </ol>
+    </nav>
+  
+  <section class="hero hero--detail" aria-labelledby="page-title">
+    <div class="shell hero__layout">
+      <div class="hero__content">
+        <p class="eyebrow ">Data operations</p>
+        <h1 id="page-title">Connect, inspect, transform and execute with explicit scope and run context.</h1>
+        <p class="hero__lead">Move from heterogeneous Sources and controlled files to managed tables, quality checks and persisted execution history without flattening all connectors into the same query or write model.</p>
+        
+        <div class="hero__actions">
+          <a class="button button--primary" href="/integrations/">Explore connector capabilities <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="hero__visual">
+  
+  
+  
+  
+  
+  
+  
+    
+  <figure class="product-visual product-visual--lifecycle visual-story" data-visual-contract="execution-rail" data-visual-story>
+    <figcaption class="visually-hidden">Move from heterogeneous Sources and controlled files to managed tables, quality checks and persisted execution history without flattening all connectors into the same query or write model.</figcaption>
+    <ol class="lifecycle-rail" role="list">
+      
+        <li>
+          <button class="lifecycle-rail__step is-active" type="button" data-story-step="0" aria-pressed="true">
+            <span aria-hidden="true">01</span>
+            <strong>Sources expose capabilities, not assumptions.</strong>
+          </button>
+        </li>
+      
+        <li>
+          <button class="lifecycle-rail__step" type="button" data-story-step="1" aria-pressed="false">
+            <span aria-hidden="true">02</span>
+            <strong>SQL Console is exploration, not database administration.</strong>
+          </button>
+        </li>
+      
+        <li>
+          <button class="lifecycle-rail__step" type="button" data-story-step="2" aria-pressed="false">
+            <span aria-hidden="true">03</span>
+            <strong>Files keep their original identity.</strong>
+          </button>
+        </li>
+      
+        <li>
+          <button class="lifecycle-rail__step" type="button" data-story-step="3" aria-pressed="false">
+            <span aria-hidden="true">04</span>
+            <strong>Publication is atomic at the stable alias.</strong>
+          </button>
+        </li>
+      
+        <li>
+          <button class="lifecycle-rail__step" type="button" data-story-step="4" aria-pressed="false">
+            <span aria-hidden="true">05</span>
+            <strong>Pipeline exposes implemented execution honestly.</strong>
+          </button>
+        </li>
+      
+        <li>
+          <button class="lifecycle-rail__step" type="button" data-story-step="5" aria-pressed="false">
+            <span aria-hidden="true">06</span>
+            <strong>Failure state is part of the result.</strong>
+          </button>
+        </li>
+      
+    </ol>
+    
+  <div class="visual-story__readout" data-typewriter-scope>
+    
+      <article class="visual-story__panel" data-story-panel="0">
+        <strong>Sources expose capabilities, not assumptions.</strong>
+        <p data-typewriter-copy="body">A Source is a project-scoped connection identity. Each driver resolves which metadata, preview, query, transfer, write, delete or quality operations are safe in the current environment.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="1">
+        <strong>SQL Console is exploration, not database administration.</strong>
+        <p data-typewriter-copy="body">Server-owned source and project context, read-only policy and bounded results support discovery before a query becomes SavedQuery, Dataset or visualisation input. Numbered tabs are durable workspaces with rename, autosave and optimistic revision handling, so leaving the browser does not silently discard the current draft.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="2">
+        <strong>Files keep their original identity.</strong>
+        <p data-typewriter-copy="body">Upload and secure URL import first create an immutable Drive version with SHA-256. Preflight resolves content, delimiter, quote, header and schema before any transform is queued.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="3">
+        <strong>Publication is atomic at the stable alias.</strong>
+        <p data-typewriter-copy="body">Validated CSV, delimited UTF-8 text, JSON object records and content from the first XLSX worksheet load into a new physical table version. The stable alias changes only after result validation succeeds.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="4">
+        <strong>Pipeline exposes implemented execution honestly.</strong>
+        <p data-typewriter-copy="body">The public catalogue exposes ExecuteQ, QueryTransfer, DirectStreamTransfer, SchemaTransfer, TransformSchema, DeleteSchema, NoSqlDelete, DataQualityRule and Master. Each dispatch creates a persisted PipelineRun; hidden legacy definitions do not become supported merely because an old record still exists.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="5">
+        <strong>Failure state is part of the result.</strong>
+        <p data-typewriter-copy="body">Queued, running, failed, partial, cancelled and recovered work must remain distinguishable. A monitoring interruption is not evidence that a state-changing operation never reached its target. Pipeline currently has no universal cancel, retry, rollback or exactly-once contract, and least-privilege database roles remain mandatory.</p>
+      </article>
+    
+    <span class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" data-typewriter-status></span>
+  </div>
+  </figure>
+  </div>
+    </div>
+  </section>
+
+  
+  
+  <section class="content-section content-section--1 content-section--source-capabilities" data-section-visual="source-capabilities" aria-labelledby="section-1-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="01">
+      <p class="section-index" aria-hidden="true">01</p>
+      <h2 id="section-1-title">Sources expose capabilities, not assumptions.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">A Source is a project-scoped connection identity. Each driver resolves which metadata, preview, query, transfer, write, delete or quality operations are safe in the current environment.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--2 content-section--durable-sql-workspace" data-section-visual="durable-sql-workspace" aria-labelledby="section-2-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="02">
+      <p class="section-index" aria-hidden="true">02</p>
+      <h2 id="section-2-title">SQL Console is exploration, not database administration.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Server-owned source and project context, read-only policy and bounded results support discovery before a query becomes SavedQuery, Dataset or visualisation input. Numbered tabs are durable workspaces with rename, autosave and optimistic revision handling, so leaving the browser does not silently discard the current draft.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+          
+            
+            
+            <div class="content-grid content-grid--durable-sql-workspace content-grid--statements" data-item-layout="statements" data-item-count="3">
+              
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">01</span><span class="content-item__copy">A successful or failed service execution is retained as QueryExecution when a valid Source and SQL request enters execution.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">02</span><span class="content-item__copy">SavedQuery keeps editable SQL; Dataset promotion creates a separate governed data asset and lineage reference.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">03</span><span class="content-item__copy">Source dialect comment syntax and safe read-only handling are normalised through shared execution boundaries rather than one PostgreSQL-only wrapper.</span></p></article>
+  
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--3 content-section--immutable-file-preflight" data-section-visual="immutable-file-preflight" aria-labelledby="section-3-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="03">
+      <p class="section-index" aria-hidden="true">03</p>
+      <h2 id="section-3-title">Files keep their original identity.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Upload and secure URL import first create an immutable Drive version with SHA-256. Preflight resolves content, delimiter, quote, header and schema before any transform is queued.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+          
+            
+            
+            <div class="content-grid content-grid--immutable-file-preflight content-grid--statements" data-item-layout="statements" data-item-count="4">
+              
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">01</span><span class="content-item__copy">CSV, TXT, TSV, PSV, DSV, DAT, DATA, LOG, JSON and XLSX are recognised through format-aware inspection.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">02</span><span class="content-item__copy">A text file with another extension can follow the delimited-text path when bounded content classification verifies it.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">03</span><span class="content-item__copy">Delimiter, control byte, quote/escape, header decision, preview rows and warnings remain visible for user confirmation.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">04</span><span class="content-item__copy">Filename and stable-alias collisions are resolved explicitly and recorded rather than silently overwriting an existing object.</span></p></article>
+  
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--0 content-section--managed-table-publication" data-section-visual="managed-table-publication" aria-labelledby="section-4-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="04">
+      <p class="section-index" aria-hidden="true">04</p>
+      <h2 id="section-4-title">Publication is atomic at the stable alias.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Validated CSV, delimited UTF-8 text, JSON object records and content from the first XLSX worksheet load into a new physical table version. The stable alias changes only after result validation succeeds.</p>
+        
+
+        
+
+        
+
+        
+
+        
+          <ol class="step-list" role="list">
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">01</span>
+                <div>
+                  
+                    <h3>Validate the immutable input</h3>
+                    <p>File identity, size, checksum, parser decision and row structure are checked before load.</p>
+                  
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">02</span>
+                <div>
+                  
+                    <h3>Create a shadow table version</h3>
+                    <p>The new physical version is isolated from the currently visible stable alias.</p>
+                  
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">03</span>
+                <div>
+                  
+                    <h3>Load, profile and validate</h3>
+                    <p>Row/column counts, schema and bounded samples are recorded; a partial load never becomes the current table.</p>
+                  
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">04</span>
+                <div>
+                  
+                    <h3>Promote or clean up</h3>
+                    <p>Only a validated result moves the alias; failure keeps the previous version available and records the attempted run.</p>
+                  
+                </div>
+              </li>
+            
+          </ol>
+        
+
+        
+          
+            
+            
+            <div class="content-grid content-grid--managed-table-publication content-grid--statements" data-item-layout="statements" data-item-count="2">
+              
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">01</span><span class="content-item__copy">The System Sandbox Source exposes managed aliases to SQL Console under the current Project schema.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">02</span><span class="content-item__copy">Rename and restore create auditable lifecycle changes; restore can deliberately re-expose an earlier schema contract.</span></p></article>
+  
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--1 content-section--pipeline-executors" data-section-visual="pipeline-executors" aria-labelledby="section-5-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="05">
+      <p class="section-index" aria-hidden="true">05</p>
+      <h2 id="section-5-title">Pipeline exposes implemented execution honestly.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">The public catalogue exposes ExecuteQ, QueryTransfer, DirectStreamTransfer, SchemaTransfer, TransformSchema, DeleteSchema, NoSqlDelete, DataQualityRule and Master. Each dispatch creates a persisted PipelineRun; hidden legacy definitions do not become supported merely because an old record still exists.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+          
+            
+            
+            <div class="content-grid content-grid--pipeline-executors content-grid--statements" data-item-layout="statements" data-item-count="4">
+              
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">01</span><span class="content-item__copy">Master supports ordered jobs, sleeps and quality gates plus serial or parallel batches.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">02</span><span class="content-item__copy">Continuation creates a new run from prior child status; it does not rewrite the original run.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">03</span><span class="content-item__copy">Job definitions are mutable and currently have no immutable JobVersion.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">04</span><span class="content-item__copy">Interval/cron Schedule intent is stored, but there is no active schedule dispatcher or reliable next-run calculation.</span></p></article>
+  
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--2 content-section--execution-failure-state" data-section-visual="execution-failure-state" aria-labelledby="section-6-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="06">
+      <p class="section-index" aria-hidden="true">06</p>
+      <h2 id="section-6-title">Failure state is part of the result.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Queued, running, failed, partial, cancelled and recovered work must remain distinguishable. A monitoring interruption is not evidence that a state-changing operation never reached its target. Pipeline currently has no universal cancel, retry, rollback or exactly-once contract, and least-privilege database roles remain mandatory.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+    <section class="related-pages" aria-labelledby="related-title">
+      <div class="shell">
+        <div class="related-pages__heading">
+          <p class="eyebrow ">Continue exploring</p>
+          
+    <h2 id="related-title">Related perspectives</h2>
+  
+        </div>
+        <div class="related-pages__grid">
+          
+            <a class="related-card" href="/integrations/">
+              <span class="related-card__eyebrow ">Integrations</span>
+              <strong>Connect heterogeneous systems through explicit capability contracts.</strong>
+              <p>A connector name is only the beginning. advanexus resolves which discovery, read, transfer, write, quality and analytics operations the exact driver and deployment can support safely.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+            <a class="related-card" href="/platform/data-quality/">
+              <span class="related-card__eyebrow ">Data Quality</span>
+              <strong>Make quality part of execution, not a document after it.</strong>
+              <p>Data Quality turns source-oriented expectations into repeatable SQL assertions with a clear pass condition, persisted QualityRun and bounded failure evidence.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+            <a class="related-card" href="/solutions/controlled-data-migration/">
+              <span class="related-card__eyebrow ">AI Migration Assurance</span>
+              <strong>Automation can move the data. advanexus makes the accepted move controllable and reviewable.</strong>
+              <p>Use advanexus around a supported migration between accepted source and target systems to connect the baseline, mappings, execution, business checks, exceptions, approval, cutover decision and available evidence. Existing systems remain the systems of record.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+        </div>
+      </div>
+    </section>
+  
+  
+  <section class="final-cta" aria-labelledby="final-cta-title">
+    <div class="shell final-cta__layout">
+      <div>
+        <p class="eyebrow ">Next step</p>
+        <h2 id="final-cta-title">Start with the flow that cannot afford ambiguity.</h2>
+      </div>
+      <div>
+        <p>Bring the systems, owners, rules, delivery obligations and evidence requirements that matter.</p>
+        <a class="button button--ink" href="/demo-request/">Discuss a critical flow <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  
+  
+  
+  
+  <footer class="site-footer">
+    <div class="shell site-footer__layout">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="/" aria-label="advanexus homepage">
+          
+  <img
+    class="brand__image brand__image--light"
+    src="/assets/dist/img/public/advanexus-wordmark-light.a39fb51538b6.webp"
+    width="640"
+    height="102"
+    alt="advanexus"
+    decoding="async"
+    loading="lazy" fetchpriority="low"
+  >
+        </a>
+        <div class="site-footer__brand-story" data-footer-brand-story>
+          <p class="brand-story__title"><strong>Progress that stays connected.</strong></p>
+          <p class="brand-story__body"><bdi dir="ltr">advanexus</bdi> brings <bdi dir="ltr">advance</bdi> and <bdi dir="ltr">nexus</bdi> together: moving forward without breaking the connection between data, decisions, accountability and evidence.</p>
+        </div>
+        
+          <nav class="site-footer__orientation" aria-label="Progress that stays connected.">
+            <ul role="list">
+              
+                <li>
+                  <a href="/platform/world/" data-footer-orientation-link="business">
+                    <span>Choose a situation you recognise</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </li>
+              
+              
+                <li>
+                  <a href="/platform/system-map/" data-footer-orientation-link="system">
+                    <span>How advanexus works</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </li>
+              
+            </ul>
+          </nav>
+        
+        
+          <a class="text-link" href="https://live.advanexus.com/" rel="noopener noreferrer">Open platform <span aria-hidden="true">↗</span><span class="visually-hidden"> Opens the advanexus application</span></a>
+        
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        
+          
+          <section class="site-footer__group" aria-label="Platform">
+            <h2 class="site-footer__group-heading" id="footer-group-1">Platform</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-1-summary">Platform</summary>
+              <ul role="list">
+                
+                  <li><a href="/platform/">Platform overview</a></li>
+                
+                  <li><a href="/platform/assurance/">advanexus Assurance</a></li>
+                
+                  <li><a href="/platform/intelligence/">advanexus Intelligence</a></li>
+                
+                  <li><a href="/platform/data-operations/">Data operations</a></li>
+                
+                  <li><a href="/platform/controlled-analytics/">Controlled analytics</a></li>
+                
+                  <li><a href="/advanexus/">advanexus</a></li>
+                
+                  <li><a href="/platform/system-map/">How advanexus works</a></li>
+                
+                  <li><a href="/platform/world/">Choose a situation you recognise</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="Solutions">
+            <h2 class="site-footer__group-heading" id="footer-group-2">Solutions</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-2-summary">Solutions</summary>
+              <ul role="list">
+                
+                  <li><a href="/solutions/">Solutions</a></li>
+                
+                  <li><a href="/industries/">Industries</a></li>
+                
+                  <li><a href="/integrations/">Integrations</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="Trust and resources">
+            <h2 class="site-footer__group-heading" id="footer-group-3">Trust and resources</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-3-summary">Trust and resources</summary>
+              <ul role="list">
+                
+                  <li><a href="/trust/">Trust center</a></li>
+                
+                  <li><a href="/trust/capability-status/">Capability status</a></li>
+                
+                  <li><a href="/trust/responsible-ai/">Responsible AI</a></li>
+                
+                  <li><a href="/resources/">Resources</a></li>
+                
+                  <li><a href="/faqs/">FAQ</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="Company and legal">
+            <h2 class="site-footer__group-heading" id="footer-group-4">Company and legal</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-4-summary">Company and legal</summary>
+              <ul role="list">
+                
+                  <li><a href="/pricing/">Pricing</a></li>
+                
+                  <li><a href="/company/">Company</a></li>
+                
+                  <li><a href="/contact/">Contact</a></li>
+                
+                  <li><a href="/demo-request/">Discuss a critical flow</a></li>
+                
+                  <li><a href="/cookie-settings/">Cookie settings</a></li>
+                
+                  <li><a href="/privacy-policy/">Privacy policy</a></li>
+                
+                  <li><a href="/cookie-policy/">Cookie policy</a></li>
+                
+                  <li><a href="/term-conditions/">Terms and conditions</a></li>
+                
+                  <li><a href="/accessibility/">Accessibility</a></li>
+                
+                  <li><a href="/sitemap/">Complete site map</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+      </nav>
+    </div>
+
+    <div class="shell site-footer__legal">
+      <p>&copy; 2026 advanexus. All rights reserved.</p>
+      <p>Move faster. Keep control. Prove the outcome.</p>
+      <a href="mailto:info@advanexus.com">info@advanexus.com</a>
+    </div>
+  </footer>
+
+  
+  <a class="site-return-to-start" href="#page-title"
+     data-back-to-top data-visible="false" aria-label="Back to top">
+    <span class="site-return-to-start__label" aria-hidden="true">Back to top</span>
+    <span class="site-return-to-start__signal" aria-hidden="true">
+      <svg viewBox="0 0 48 48" focusable="false">
+        <circle class="site-return-to-start__track" cx="24" cy="24" r="20" pathLength="100"></circle>
+        <circle class="site-return-to-start__progress" data-back-to-top-progress
+                cx="24" cy="24" r="20" pathLength="100"></circle>
+        <path class="site-return-to-start__arrow" d="M24 34V14M16.5 21.5 24 14l7.5 7.5"></path>
+        <rect class="site-return-to-start__packet" x="21" y="29" width="6" height="6" rx="1"></rect>
+      </svg>
+    </span>
+  </a>
+</body>
+</html>

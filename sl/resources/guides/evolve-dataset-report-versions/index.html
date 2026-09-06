@@ -1,0 +1,1332 @@
+<!doctype html>
+<html lang="sl" dir="ltr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#343541">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="application-name" content="advanexus">
+  <link rel="icon" href="/assets/dist/img/public/advanexus-icon-32.b5f4ba1e3910.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/dist/img/public/advanexus-icon-48.04d163424cb0.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/assets/dist/img/public/advanexus-apple-touch-icon-180.ac7a16998eb1.png" sizes="180x180">
+  <link rel="manifest" href="/site-sl.webmanifest" type="application/manifest+json">
+  <title>Razvoj različic Dataset in Report | Vodnik advanexus</title>
+  <meta name="description" content="Primerjajte različice Dataset, preverite analitično združljivost in sprejmite nov natančno določeni DatasetVersion v novem ReportVersion.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="advanexus">
+  <link rel="canonical" href="https://www.advanexus.com/sl/resources/guides/evolve-dataset-report-versions/">
+  <link rel="alternate" type="application/atom+xml" title="vodniki advanexus" href="https://www.advanexus.com/feed-sl.xml">
+  
+    <link rel="alternate" hreflang="en-GB" href="https://www.advanexus.com/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="en-US" href="https://www.advanexus.com/us/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="de" href="https://www.advanexus.com/de/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="sl" href="https://www.advanexus.com/sl/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="sr-Latn" href="https://www.advanexus.com/sr/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="hu" href="https://www.advanexus.com/hu/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="ar" href="https://www.advanexus.com/ar/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="zh-Hans" href="https://www.advanexus.com/zh/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="ja" href="https://www.advanexus.com/ja/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="sv" href="https://www.advanexus.com/sv/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="es" href="https://www.advanexus.com/es/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="ru" href="https://www.advanexus.com/ru/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="hi" href="https://www.advanexus.com/hi/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="pt-PT" href="https://www.advanexus.com/pt/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="fi-FI" href="https://www.advanexus.com/fi/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="nb-NO" href="https://www.advanexus.com/no/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="nl-NL" href="https://www.advanexus.com/nl/resources/guides/evolve-dataset-report-versions/">
+  
+    <link rel="alternate" hreflang="da-DK" href="https://www.advanexus.com/da/resources/guides/evolve-dataset-report-versions/">
+  
+  
+  
+    <link rel="alternate" hreflang="x-default" href="https://www.advanexus.com/resources/guides/evolve-dataset-report-versions/">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="advanexus">
+  <meta property="og:title" content="Razvoj različic Dataset in Report | Vodnik advanexus">
+  <meta property="og:description" content="Primerjajte različice Dataset, preverite analitično združljivost in sprejmite nov natančno določeni DatasetVersion v novem ReportVersion.">
+  <meta property="og:url" content="https://www.advanexus.com/sl/resources/guides/evolve-dataset-report-versions/">
+  <meta property="og:image" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta property="og:image:secure_url" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="advanexus — nadzor in dokazila za kritične poslovne procese prek sistemov, podatkov in dela s pomočjo umetne inteligence.">
+  <meta property="og:locale" content="sl_SI">
+  <meta property="og:locale:alternate" content="en_GB"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="de_DE"><meta property="og:locale:alternate" content="sr_RS"><meta property="og:locale:alternate" content="hu_HU"><meta property="og:locale:alternate" content="ar_AE"><meta property="og:locale:alternate" content="zh_CN"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="sv_SE"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="ru_RU"><meta property="og:locale:alternate" content="hi_IN"><meta property="og:locale:alternate" content="pt_PT"><meta property="og:locale:alternate" content="fi_FI"><meta property="og:locale:alternate" content="nb_NO"><meta property="og:locale:alternate" content="nl_NL"><meta property="og:locale:alternate" content="da_DK">
+  
+    <meta property="article:published_time" content="2026-07-16">
+    <meta property="article:modified_time" content="2026-07-16">
+    <meta property="article:section" content="Navodila in terminologija izdelka">
+    <meta property="article:tag" content="Navodila in terminologija izdelka">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Razvoj različic Dataset in Report | Vodnik advanexus">
+  <meta name="twitter:description" content="Primerjajte različice Dataset, preverite analitično združljivost in sprejmite nov natančno določeni DatasetVersion v novem ReportVersion.">
+  <meta name="twitter:image" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta name="twitter:image:alt" content="advanexus — nadzor in dokazila za kritične poslovne procese prek sistemov, podatkov in dela s pomočjo umetne inteligence.">
+  <link rel="preload" href="/assets/dist/fonts/SpaceGrotesk-variable.8e085aa43809.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/dist/css/site.f76576626e42.css">
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.advanexus.com/sl/resources/guides/evolve-dataset-report-versions/#webpage","url":"https://www.advanexus.com/sl/resources/guides/evolve-dataset-report-versions/","name":"Razvoj različic Dataset in Report | Vodnik advanexus","description":"Primerjajte različice Dataset, preverite analitično združljivost in sprejmite nov natančno določeni DatasetVersion v novem ReportVersion.","inLanguage":"sl","isPartOf":{"@id":"https://www.advanexus.com/#website"},"publisher":{"@id":"https://www.advanexus.com/#organization"},"about":{"@id":"https://www.advanexus.com/sl/resources/#topic-resources"},"dateModified":"2026-07-16","headline":"Razvijajte Dataset in poročilo, ne da bi prepisali njuno zgodovino.","author":{"@id":"https://www.advanexus.com/#organization"},"mainEntityOfPage":"https://www.advanexus.com/sl/resources/guides/evolve-dataset-report-versions/","articleSection":"Navodila in terminologija izdelka","keywords":["Navodila in terminologija izdelka"],"datePublished":"2026-07-16","breadcrumb":{"@id":"https://www.advanexus.com/sl/resources/guides/evolve-dataset-report-versions/#breadcrumb"}},{"@type":"DefinedTerm","@id":"https://www.advanexus.com/sl/resources/#topic-resources","name":"Navodila in terminologija izdelka","description":"Operativni vodniki, javna terminologija, spremembe zmožnosti in praktične razlage izdelka.","url":"https://www.advanexus.com/sl/resources/"},{"@type":"BreadcrumbList","@id":"https://www.advanexus.com/sl/resources/guides/evolve-dataset-report-versions/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Domov","item":"https://www.advanexus.com/sl/"},{"@type":"ListItem","position":2,"name":"Pregled virov","item":"https://www.advanexus.com/sl/resources/"},{"@type":"ListItem","position":3,"name":"Vodniki in vpogledi","item":"https://www.advanexus.com/sl/resources/guides/"},{"@type":"ListItem","position":4,"name":"Razvijajte različice Dataset in Report","item":"https://www.advanexus.com/sl/resources/guides/evolve-dataset-report-versions/"}]}]}</script>
+  <script src="/assets/dist/js/typing.d72c71ee9cf4.js" defer></script>
+  <script src="/assets/dist/js/form-safety.3b307b166fd8.js" defer></script>
+  <script src="/assets/dist/js/main.8566869dc07e.js" defer></script>
+  
+</head>
+<body data-page-id="guide-evolve-dataset-report" data-page-kind="article">
+  <a class="skip-link" href="#main-content">Preskoči na glavno vsebino</a>
+
+  
+  
+  
+  
+  <header class="site-header" data-site-header>
+    <div class="site-header__bar shell">
+      <a class="brand" href="/sl/" aria-label="Domača stran advanexus">
+        
+  <img
+    class="brand__image brand__image--color"
+    src="/assets/dist/img/public/advanexus-wordmark-color.e0d75236a617.webp"
+    width="640"
+    height="102"
+    alt="advanexus"
+    decoding="async"
+    
+  >
+      </a>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Glavna navigacija" data-site-nav>
+        <div class="site-nav__groups">
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Platforma</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Oglejte si, kako kritični procesi ostanejo nadzorovani in dokazljivi.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/">
+                          <span>Pregled platforme</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/world/">
+                          <span>Izberite situacijo, ki jo prepoznate</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/system-map/">
+                          <span>Kako deluje advanexus</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/assurance/">
+                          <span>advanexus Assurance</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/intelligence/">
+                          <span>advanexus Intelligence</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/data-operations/">
+                          <span>Podatkovne operacije</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/governed-datasets/">
+                          <span>Upravljani Dataseti</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/controlled-analytics/">
+                          <span>Nadzorovana analitika</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/anpy/">
+                          <span>ANPy za upravljani Python</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/data-quality/">
+                          <span>Data Quality</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Rešitve</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Začnite s poslovnim problemom in merljivim rezultatom.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/industries/">
+                          <span>Panoge in operativni konteksti</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/solutions/audit-ready-data-operations/">
+                          <span>Podatkovne operacije, pripravljene na revizijo</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/solutions/regulatory-reporting/">
+                          <span>Regulatorno poročanje</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/solutions/controlled-data-migration/">
+                          <span>Nadzorovana migracija podatkov</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/solutions/trusted-bi-ai-inputs/">
+                          <span>Zaupanja vredni vhodi za BI in AI</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/solutions/governed-analytics-delivery/">
+                          <span>Upravljana dostava analitike</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/solutions/evidence-backed-investigation/">
+                          <span>Preiskava, podprta z dokazili</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Zaupanje</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Preverite, kako delujejo nadzor, dokazila in meje izdelka.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/">
+                          <span>Središče zaupanja</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/architecture/">
+                          <span>Arhitektura</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/security-governance/">
+                          <span>Varnost in upravljanje</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/evidence-model/">
+                          <span>Model dokazil</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/deployment/">
+                          <span>Uvedba</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/capability-status/">
+                          <span>Status zmožnosti</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/responsible-ai/">
+                          <span>Odgovorna umetna inteligenca</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Viri</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Odgovori, primeri in dokazila za informirano odločitev.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/resources/">
+                          <span>Pregled virov</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/resources/guides/">
+                          <span>Vodniki in vpogledi</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/resources/glossary/">
+                          <span>Slovar izdelka</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/resources/changelog/">
+                          <span>Opombe o zmožnostih</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/faqs/">
+                          <span>Pogosta vprašanja</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/search/">
+                          <span>Preišči javne vsebine</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+
+          
+            
+              <a class="site-nav__link"
+                 href="/sl/integrations/">
+                Integracije
+                
+              </a>
+            
+          
+            
+              <a class="site-nav__link"
+                 href="/sl/pricing/">
+                Cene
+                
+              </a>
+            
+          
+        </div>
+
+        <div class="site-nav__actions">
+          
+            
+              <a class="button button--quiet" href="https://live.advanexus.com/" rel="noopener noreferrer">
+                Odpri platformo v živo
+                <svg class="icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5 15"/></svg><span class="visually-hidden"> Odpre aplikacijo advanexus</span>
+              </a>
+            
+          
+            
+              <a class="button button--primary" href="/sl/demo-request/">
+                Pogovorimo se o kritičnem toku
+                
+              </a>
+            
+          
+        </div>
+      </nav>
+
+      <div class="site-header__utilities">
+        <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="site-navigation" aria-label="Odpri navigacijo" data-nav-toggle data-open-label="Odpri navigacijo" data-close-label="Zapri navigacijo">
+          <span class="nav-toggle__label" data-nav-toggle-label>Odpri navigacijo</span>
+          <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+
+        
+          <details class="language-switcher" data-language-switcher>
+            <summary class="language-switcher__trigger" aria-controls="language-switcher-panel" aria-label="Izberite jezik · Trenutni jezik: Slovenščina">
+              <span class="language-switcher__identity" aria-hidden="true">
+                <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇸🇮</span>
+              </span>
+            </summary>
+            <ul class="language-switcher__panel" id="language-switcher-panel" role="list">
+              
+                <li>
+                  <a class="language-switcher__option" href="/resources/guides/evolve-dataset-report-versions/" lang="en-GB" hreflang="en-GB">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇬🇧</span>
+                    <bdi class="language-switcher__name" lang="en-GB" dir="ltr">English (UK)</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/us/resources/guides/evolve-dataset-report-versions/" lang="en-US" hreflang="en-US">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇺🇸</span>
+                    <bdi class="language-switcher__name" lang="en-US" dir="ltr">English (US)</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/de/resources/guides/evolve-dataset-report-versions/" lang="de" hreflang="de">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇩🇪</span>
+                    <bdi class="language-switcher__name" lang="de" dir="ltr">Deutsch</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sl/resources/guides/evolve-dataset-report-versions/" lang="sl" hreflang="sl" aria-current="page">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇸🇮</span>
+                    <bdi class="language-switcher__name" lang="sl" dir="ltr">Slovenščina</bdi>
+                    
+                      <svg class="icon language-switcher__active-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m4 10 4 4 8-8"/></svg>
+                      <span class="visually-hidden">— Trenutni jezik</span>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sr/resources/guides/evolve-dataset-report-versions/" lang="sr-Latn" hreflang="sr-Latn">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇷🇸</span>
+                    <bdi class="language-switcher__name" lang="sr-Latn" dir="ltr">Srpski</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/hu/resources/guides/evolve-dataset-report-versions/" lang="hu" hreflang="hu">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇭🇺</span>
+                    <bdi class="language-switcher__name" lang="hu" dir="ltr">Magyar</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ar/resources/guides/evolve-dataset-report-versions/" lang="ar" hreflang="ar">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇦🇪</span>
+                    <bdi class="language-switcher__name" lang="ar" dir="rtl">العربية</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/zh/resources/guides/evolve-dataset-report-versions/" lang="zh-Hans" hreflang="zh-Hans">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇨🇳</span>
+                    <bdi class="language-switcher__name" lang="zh-Hans" dir="ltr">简体中文</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ja/resources/guides/evolve-dataset-report-versions/" lang="ja" hreflang="ja">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇯🇵</span>
+                    <bdi class="language-switcher__name" lang="ja" dir="ltr">日本語</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sv/resources/guides/evolve-dataset-report-versions/" lang="sv" hreflang="sv">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇸🇪</span>
+                    <bdi class="language-switcher__name" lang="sv" dir="ltr">Svenska</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/es/resources/guides/evolve-dataset-report-versions/" lang="es" hreflang="es">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇪🇸</span>
+                    <bdi class="language-switcher__name" lang="es" dir="ltr">Español</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ru/resources/guides/evolve-dataset-report-versions/" lang="ru" hreflang="ru">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇷🇺</span>
+                    <bdi class="language-switcher__name" lang="ru" dir="ltr">Русский</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/hi/resources/guides/evolve-dataset-report-versions/" lang="hi" hreflang="hi">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇮🇳</span>
+                    <bdi class="language-switcher__name" lang="hi" dir="ltr">हिन्दी</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/pt/resources/guides/evolve-dataset-report-versions/" lang="pt-PT" hreflang="pt-PT">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇵🇹</span>
+                    <bdi class="language-switcher__name" lang="pt-PT" dir="ltr">Português</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/fi/resources/guides/evolve-dataset-report-versions/" lang="fi-FI" hreflang="fi-FI">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇫🇮</span>
+                    <bdi class="language-switcher__name" lang="fi-FI" dir="ltr">Suomi</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/no/resources/guides/evolve-dataset-report-versions/" lang="nb-NO" hreflang="nb-NO">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇳🇴</span>
+                    <bdi class="language-switcher__name" lang="nb-NO" dir="ltr">Norsk bokmål</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/nl/resources/guides/evolve-dataset-report-versions/" lang="nl-NL" hreflang="nl-NL">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇳🇱</span>
+                    <bdi class="language-switcher__name" lang="nl-NL" dir="ltr">Nederlands</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/da/resources/guides/evolve-dataset-report-versions/" lang="da-DK" hreflang="da-DK">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇩🇰</span>
+                    <bdi class="language-switcher__name" lang="da-DK" dir="ltr">Dansk</bdi>
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          </details>
+        
+
+        <a class="header-search"
+           href="/sl/search/#site-search-query"
+           aria-label="Preišči javno spletno mesto"
+           data-header-search>
+          <svg class="header-search__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="10.75" cy="10.75" r="6.25"/>
+            <path d="m15.5 15.5 4.25 4.25"/>
+          </svg>
+          <span class="visually-hidden">Preišči javno spletno mesto</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main" tabindex="-1">
+    
+  
+    <nav class="breadcrumbs shell" aria-label="Navigacijska pot">
+      <ol role="list">
+        
+          <li>
+            
+              <a href="/sl/">Domov</a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/sl/resources/">Pregled virov</a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/sl/resources/guides/">Vodniki in vpogledi</a>
+            
+          </li>
+        
+          <li aria-current="page">
+            
+              Razvijajte različice Dataset in Report
+            
+          </li>
+        
+      </ol>
+    </nav>
+  
+  <section class="hero hero--detail" aria-labelledby="page-title">
+    <div class="shell hero__layout">
+      <div class="hero__content">
+        <p class="eyebrow ">Operativni vodnik · Razvoj različic</p>
+        <h1 id="page-title">Razvijajte Dataset in poročilo, ne da bi prepisali njuno zgodovino.</h1>
+        <p class="hero__lead">Ta potek uporabite, kadar se spremenijo SQL v lasti Dataset, izvor vira, shema, stolpci ali metapodatki stolpcev in se mora obstoječe poročilo odločiti, ali bo sprejelo novo pogodbo.</p>
+        
+          <dl class="article-meta" aria-label="Metapodatki članka">
+            <div>
+              <dt>Kategorija</dt>
+              <dd><a href="/sl/resources/">Navodila in terminologija izdelka</a></dd>
+            </div>
+            <div>
+              <dt>Objavljeno</dt>
+              <dd><time datetime="2026-07-16">2026-07-16</time></dd>
+            </div>
+            
+            <div>
+              <dt>Avtor</dt>
+              <dd>advanexus</dd>
+            </div>
+          </dl>
+        
+        <div class="hero__actions">
+          <a class="button button--primary" href="#section-1-title">Začnite z odločitvijo o sprejemu <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="hero__visual">
+  
+  
+  
+  
+  
+  
+  
+    
+  <figure class="product-visual product-visual--versions visual-story" data-visual-contract="dataset-report-guide" data-visual-story>
+    <figcaption class="visually-hidden">Ta potek uporabite, kadar se spremenijo SQL v lasti Dataset, izvor vira, shema, stolpci ali metapodatki stolpcev in se mora obstoječe poročilo odločiti, ali bo sprejelo novo pogodbo.</figcaption>
+    <div class="version-stack">
+      
+        <button class="version-card is-active" type="button" data-story-step="0" aria-pressed="true">
+          <span>v1</span>
+          <strong>Vprašanje za odločitev</strong>
+          <small aria-hidden="true">sha256 · 01</small>
+        </button>
+      
+        <button class="version-card" type="button" data-story-step="1" aria-pressed="false">
+          <span>v2</span>
+          <strong>Uporabljeni objekti in kontrole</strong>
+          <small aria-hidden="true">sha256 · 02</small>
+        </button>
+      
+        <button class="version-card" type="button" data-story-step="2" aria-pressed="false">
+          <span>v3</span>
+          <strong>Potek sprejema</strong>
+          <small aria-hidden="true">sha256 · 03</small>
+        </button>
+      
+      <div class="version-diff" aria-hidden="true">
+        <span>−</span><span>+</span><span>→</span>
+      </div>
+      
+        <button class="version-card version-card--binding" type="button" data-story-step="3" aria-pressed="false">
+          <span>04</span>
+          <strong>Napake in delni poteki</strong>
+        </button>
+      
+        <button class="version-card version-card--binding" type="button" data-story-step="4" aria-pressed="false">
+          <span>05</span>
+          <strong>Ustvarjena dokazila</strong>
+        </button>
+      
+    </div>
+    
+  <div class="visual-story__readout" data-typewriter-scope>
+    
+      <article class="visual-story__panel" data-story-panel="0">
+        <strong>Vprašanje za odločitev</strong>
+        <p data-typewriter-copy="body">Ali Dataset v3 ohranja stolpce, tipe, zrnatost in pomen vira, ki jih potrebuje poročilo — ali naj Report v5 ostane pripet na Dataset v2, dokler analitična pogodba ni preoblikovana?</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="1">
+        <strong>Uporabljeni objekti in kontrole</strong>
+        <p data-typewriter-copy="body">Dataset, DatasetVersion in DatasetColumn nosijo osnovno podatkovno pogodbo. ReportVersion nosi analitični namen in natančne vezave DatasetVersion. AnalyticsRun zabeleži eno izvedbo pod trenutnim upravljanjem.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="2">
+        <strong>Potek sprejema</strong>
+        <p data-typewriter-copy="body">Nov DatasetVersion sam po sebi nikoli ne premakne obstoječega ReportVersion.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="3">
+        <strong>Napake in delni poteki</strong>
+        <p data-typewriter-copy="body">Zavrnjeni kandidat pusti prejšnjo različico poročila za produkcijo in njene zgodovinske vezave zagonov nespremenjene.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="4">
+        <strong>Ustvarjena dokazila</strong>
+        <p data-typewriter-copy="body">Primerjava različic, identiteta sprejetega DatasetVersion, nespremenljiva vezava ReportVersion, zgoščene vrednosti prevajanja, konfiguracije, filtrov in RLS ter poznejši AnalyticsRun sestavljajo zabeleženo verigo podprte spremembe.</p>
+      </article>
+    
+    <span class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" data-typewriter-status></span>
+  </div>
+  </figure>
+  </div>
+    </div>
+  </section>
+
+  
+  
+  <section class="content-section content-section--1 content-section--decision-question" data-section-visual="decision-question" aria-labelledby="section-1-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="01">
+      <p class="section-index" aria-hidden="true">01</p>
+      <h2 id="section-1-title">Vprašanje za odločitev</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Ali Dataset v3 ohranja stolpce, tipe, zrnatost in pomen vira, ki jih potrebuje poročilo — ali naj Report v5 ostane pripet na Dataset v2, dokler analitična pogodba ni preoblikovana?</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--2 content-section--guide-object-map" data-section-visual="guide-object-map" aria-labelledby="section-2-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="02">
+      <p class="section-index" aria-hidden="true">02</p>
+      <h2 id="section-2-title">Uporabljeni objekti in kontrole</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Dataset, DatasetVersion in DatasetColumn nosijo osnovno podatkovno pogodbo. ReportVersion nosi analitični namen in natančne vezave DatasetVersion. AnalyticsRun zabeleži eno izvedbo pod trenutnim upravljanjem.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+          
+            
+            
+            <div class="content-grid content-grid--guide-object-map content-grid--statements" data-item-layout="statements" data-item-count="4">
+              
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">01</span><span class="content-item__copy">Življenjski cikel Dataset in nespremenljiva identiteta DatasetVersion</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">02</span><span class="content-item__copy">Normalizirani SQL, izvor vira, stolpci, tipi in znani metapodatki profiliranja</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">03</span><span class="content-item__copy">Dimenzije, metrike in grafikon poročila, trajni filtri ter natančne vezave</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">04</span><span class="content-item__copy">Strežniško upravljano prevajanje, dovoljenja, RLS in kontekst predogleda</span></p></article>
+  
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--3 content-section--dataset-report-acceptance" data-section-visual="dataset-report-acceptance" aria-labelledby="section-3-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="03">
+      <p class="section-index" aria-hidden="true">03</p>
+      <h2 id="section-3-title">Potek sprejema</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Nov DatasetVersion sam po sebi nikoli ne premakne obstoječega ReportVersion.</p>
+        
+
+        
+
+        
+
+        
+
+        
+          <ol class="step-list" role="list">
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">01</span>
+                <div>
+                  
+                    <h3>Ustvarite nov DatasetVersion</h3>
+                    <p>Spremenjeno pogodbo SQL, sheme in stolpcev v lasti Dataset shranite ob ohranitvi stabilne identitete Dataset in vseh prejšnjih različic.</p>
+                  
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">02</span>
+                <div>
+                  
+                    <h3>Primerjajte natančno določene različice</h3>
+                    <p>Preglejte razliko normaliziranega SQL, izvora vira, dodane, odstranjene in spremenjene stolpce, tipe, dovoljenost vrednosti null ter nerazpoložljive zgodovinske metapodatke.</p>
+                  
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">03</span>
+                <div>
+                  
+                    <h3>Ocenite analitično združljivost</h3>
+                    <p>Potrdite predvideno zrnatost, dimenzije in izvorna polja, ki jih zahteva posamezna metrika; združljivosti ne sklepajte zgolj iz ujemajočih se imen.</p>
+                  
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">04</span>
+                <div>
+                  
+                    <h3>Odprite nov osnutek poročila</h3>
+                    <p>Prejšnji ReportVersion ohranite nespremenljiv in osnutek vežite na kandidatni DatasetVersion.</p>
+                  
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">05</span>
+                <div>
+                  
+                    <h3>Preverite in prevedite</h3>
+                    <p>Razrešite metapodatke, preverite Query Context in prevedite strežniško upravljano poizvedbo SQL samo za branje za trenutno podprto pot narečja.</p>
+                  
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">06</span>
+                <div>
+                  
+                    <h3>Izvedite predogled pod upravljanjem</h3>
+                    <p>Izvedite omejen predogled s trenutnimi dovoljenji in obsegom RLS ter preglejte diagnostiko, namesto da bi sprejeli zgolj preverjanje sheme.</p>
+                  
+                </div>
+              </li>
+            
+              <li>
+                <span class="step-list__number" aria-hidden="true">07</span>
+                <div>
+                  
+                    <h3>Shranite sprejeti ReportVersion</h3>
+                    <p>Novo vezavo trajno shranite šele po sprejemu; naslednji zagoni AnalyticsRun se sklicujejo na ta natančni par ReportVersion in DatasetVersion.</p>
+                  
+                </div>
+              </li>
+            
+          </ol>
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--0 content-section--guide-failure-paths" data-section-visual="guide-failure-paths" aria-labelledby="section-4-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="04">
+      <p class="section-index" aria-hidden="true">04</p>
+      <h2 id="section-4-title">Napake in delni poteki</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Zavrnjeni kandidat pusti prejšnjo različico poročila za produkcijo in njene zgodovinske vezave zagonov nespremenjene.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+          
+            
+            
+            <div class="content-grid content-grid--guide-failure-paths content-grid--records" data-item-layout="records" data-item-count="3">
+              
+    <article class="content-item">
+      
+      <h3>Odstranjeno ali spremenjeno polje</h3>
+      <p>Prevajanje ali semantično preverjanje blokira osnutek; preoblikujte dimenzijo ali metriko, namesto da spremenite stari ReportVersion.</p>
+      
+      
+    </article>
+  
+    <article class="content-item">
+      
+      <h3>Predogled se nepričakovano razlikuje</h3>
+      <p>Spreminjanje živih vrstic, spremembo vira, obseg filtrov/RLS in spremembo pogodbe obravnavajte kot ločene hipoteze; virtualni DatasetVersion ni posnetek vrstic.</p>
+      
+      
+    </article>
+  
+    <article class="content-item">
+      
+      <h3>Več vezav je le delno uspešnih</h3>
+      <p>Preglejte diagnostiko vsake vezave in ohranite delno stanje; poročila ne potrdite le na podlagi uspešne vezave.</p>
+      
+      
+    </article>
+  
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--1 content-section--guide-evidence-output" data-section-visual="guide-evidence-output" aria-labelledby="section-5-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="05">
+      <p class="section-index" aria-hidden="true">05</p>
+      <h2 id="section-5-title">Ustvarjena dokazila</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Primerjava različic, identiteta sprejetega DatasetVersion, nespremenljiva vezava ReportVersion, zgoščene vrednosti prevajanja, konfiguracije, filtrov in RLS ter poznejši AnalyticsRun sestavljajo zabeleženo verigo podprte spremembe.</p>
+        
+
+        
+
+        
+
+        
+          <p class="section-formula">Report v4 → Dataset v2 · Report v5 → Dataset v2 · Report v6 → Dataset v3</p>
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--2 content-section--guide-boundary" data-section-visual="guide-boundary" aria-labelledby="section-6-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="06">
+      <p class="section-index" aria-hidden="true">06</p>
+      <h2 id="section-6-title">Trenutna meja</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Primerjava zajema zabeležene SQL, shemo, stolpce, metapodatke in izvor; ne izmišlja si splošnega vpliva na nadaljnje poslovne procese. Metrike Analytics, RLS in dovoljenja poročila ostajajo zunaj osnovnega agregata Dataset, natančne zgodovinske vrstice pa zahtevajo artefakt ali izrecno pogodbo materializiranega posnetka.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+    <section class="related-pages" aria-labelledby="related-title">
+      <div class="shell">
+        <div class="related-pages__heading">
+          <p class="eyebrow ">Nadaljujte raziskovanje</p>
+          
+    <h2 id="related-title">Sorodne strani</h2>
+  
+        </div>
+        <div class="related-pages__grid">
+          
+            <a class="related-card" href="/sl/platform/governed-datasets/">
+              <span class="related-card__eyebrow ">Upravljani Dataseti</span>
+              <strong>Podatkovne definicije pretvorite v sredstva z različicami in izrecnim izvorom.</strong>
+              <p>Dataset loči raziskovalni SQL od ponovno uporabne podatkovne pogodbe. Stabilna identiteta, nespremenljive različice in semantični metapodatki ustvarijo nadzorovano osnovo za poročila brez skrivanja izvora podatkov.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+            <a class="related-card" href="/sl/platform/controlled-analytics/">
+              <span class="related-card__eyebrow ">Nadzorovana analitika</span>
+              <strong>Pripnite podatkovno pogodbo. Upravljajte izvajanje. Pojasnite rezultat.</strong>
+              <p>Nadzorovana analitika poročilo veže na natančne DatasetVersions, na strežniku preveri Query Context ter ohrani kontekst dovoljenj, RLS, filtrov, vezav in artefaktov v ozadju podprtega rezultata.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+            <a class="related-card" href="/sl/resources/guides/source-to-governed-analytical-result/">
+              <span class="related-card__eyebrow ">Operativni vodnik · Življenjski cikel podatkov</span>
+              <strong>Od znanega vhoda do upravljanega analitičnega rezultata.</strong>
+              <p>Ta potek uporabite, kadar mora ponavljajoči se analitični rezultat ohraniti znani kontekst vhoda, kakovosti, različice, dovoljenj in izvedbe v ločenih kanoničnih modulih.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+            <a class="related-card" href="/sl/platform/assurance/">
+              <span class="related-card__eyebrow brand-case">advanexus Assurance</span>
+              <strong>Podprt rezultat raziščite prek razpoložljivih dokazil v njegovem ozadju.</strong>
+              <p>Assurance je dovoljenjem prilagojen, za branje optimiziran sloj za raziskovanje podprtih operativnih dokazil. Ne nadomesti kanoničnega vira in ne ustvari zgodovine, ki ni bila zabeležena.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+        </div>
+      </div>
+    </section>
+  
+  
+  <section class="final-cta" aria-labelledby="final-cta-title">
+    <div class="shell final-cta__layout">
+      <div>
+        <p class="eyebrow ">Naslednji korak</p>
+        <h2 id="final-cta-title">Preglejte meje različic v modelu izdelka.</h2>
+      </div>
+      <div>
+        <p>Dataset je lastnik podatkovne pogodbe; Analytics je lastnik namena poročila, metrik, RLS in izvedbe.</p>
+        <a class="button button--ink" href="/sl/platform/governed-datasets/">Raziščite upravljane Dataset <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  
+  
+  
+  
+  <footer class="site-footer">
+    <div class="shell site-footer__layout">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="/sl/" aria-label="Domača stran advanexus">
+          
+  <img
+    class="brand__image brand__image--light"
+    src="/assets/dist/img/public/advanexus-wordmark-light.a39fb51538b6.webp"
+    width="640"
+    height="102"
+    alt="advanexus"
+    decoding="async"
+    loading="lazy" fetchpriority="low"
+  >
+        </a>
+        <div class="site-footer__brand-story" data-footer-brand-story>
+          <p class="brand-story__title"><strong>Napredek, ki ostaja povezan.</strong></p>
+          <p class="brand-story__body"><bdi dir="ltr">advanexus</bdi> združuje <bdi dir="ltr">advance</bdi> in <bdi dir="ltr">nexus</bdi>: napredovanje brez pretrganja vezi med podatki, odločitvami, odgovornostjo in dokazili.</p>
+        </div>
+        
+          <nav class="site-footer__orientation" aria-label="Napredek, ki ostaja povezan.">
+            <ul role="list">
+              
+                <li>
+                  <a href="/sl/platform/world/" data-footer-orientation-link="business">
+                    <span>Izberite situacijo, ki jo prepoznate</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </li>
+              
+              
+                <li>
+                  <a href="/sl/platform/system-map/" data-footer-orientation-link="system">
+                    <span>Kako deluje advanexus</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </li>
+              
+            </ul>
+          </nav>
+        
+        
+          <a class="text-link" href="https://live.advanexus.com/" rel="noopener noreferrer">Odpri platformo <span aria-hidden="true">↗</span><span class="visually-hidden"> Odpre aplikacijo advanexus</span></a>
+        
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Navigacija v nogi">
+        
+          
+          <section class="site-footer__group" aria-label="Platforma">
+            <h2 class="site-footer__group-heading" id="footer-group-1">Platforma</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-1-summary">Platforma</summary>
+              <ul role="list">
+                
+                  <li><a href="/sl/platform/">Pregled platforme</a></li>
+                
+                  <li><a href="/sl/platform/assurance/">advanexus Assurance</a></li>
+                
+                  <li><a href="/sl/platform/intelligence/">advanexus Intelligence</a></li>
+                
+                  <li><a href="/sl/platform/data-operations/">Podatkovne operacije</a></li>
+                
+                  <li><a href="/sl/platform/controlled-analytics/">Nadzorovana analitika</a></li>
+                
+                  <li><a href="/sl/advanexus/">advanexus</a></li>
+                
+                  <li><a href="/sl/platform/system-map/">Kako deluje advanexus</a></li>
+                
+                  <li><a href="/sl/platform/world/">Izberite situacijo, ki jo prepoznate</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="Rešitve">
+            <h2 class="site-footer__group-heading" id="footer-group-2">Rešitve</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-2-summary">Rešitve</summary>
+              <ul role="list">
+                
+                  <li><a href="/sl/solutions/">Rešitve</a></li>
+                
+                  <li><a href="/sl/industries/">Panoge</a></li>
+                
+                  <li><a href="/sl/integrations/">Integracije</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="Zaupanje in viri">
+            <h2 class="site-footer__group-heading" id="footer-group-3">Zaupanje in viri</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-3-summary">Zaupanje in viri</summary>
+              <ul role="list">
+                
+                  <li><a href="/sl/trust/">Središče zaupanja</a></li>
+                
+                  <li><a href="/sl/trust/capability-status/">Status zmožnosti</a></li>
+                
+                  <li><a href="/sl/trust/responsible-ai/">Odgovorna umetna inteligenca</a></li>
+                
+                  <li><a href="/sl/resources/">Viri</a></li>
+                
+                  <li><a href="/sl/faqs/">Pogosta vprašanja</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="Podjetje in pravne vsebine">
+            <h2 class="site-footer__group-heading" id="footer-group-4">Podjetje in pravne vsebine</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-4-summary">Podjetje in pravne vsebine</summary>
+              <ul role="list">
+                
+                  <li><a href="/sl/pricing/">Cene in sodelovanje</a></li>
+                
+                  <li><a href="/sl/company/">Podjetje</a></li>
+                
+                  <li><a href="/sl/contact/">Kontakt</a></li>
+                
+                  <li><a href="/sl/demo-request/">Pogovorimo se o kritičnem toku</a></li>
+                
+                  <li><a href="/sl/cookie-settings/">Nastavitve piškotkov</a></li>
+                
+                  <li><a href="/sl/privacy-policy/">Pravilnik o zasebnosti</a></li>
+                
+                  <li><a href="/sl/cookie-policy/">Pravilnik o piškotkih</a></li>
+                
+                  <li><a href="/sl/term-conditions/">Pogoji in določila</a></li>
+                
+                  <li><a href="/sl/accessibility/">Dostopnost</a></li>
+                
+                  <li><a href="/sl/sitemap/">Celoten zemljevid spletnega mesta</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+      </nav>
+    </div>
+
+    <div class="shell site-footer__legal">
+      <p>&copy; 2026 advanexus. Vse pravice pridržane.</p>
+      <p>Delujte hitreje. Ohranite nadzor. Dokažite rezultat.</p>
+      <a href="mailto:info@advanexus.com">info@advanexus.com</a>
+    </div>
+  </footer>
+
+  
+  <a class="site-return-to-start" href="#page-title"
+     data-back-to-top data-visible="false" aria-label="Nazaj na vrh">
+    <span class="site-return-to-start__label" aria-hidden="true">Nazaj na vrh</span>
+    <span class="site-return-to-start__signal" aria-hidden="true">
+      <svg viewBox="0 0 48 48" focusable="false">
+        <circle class="site-return-to-start__track" cx="24" cy="24" r="20" pathLength="100"></circle>
+        <circle class="site-return-to-start__progress" data-back-to-top-progress
+                cx="24" cy="24" r="20" pathLength="100"></circle>
+        <path class="site-return-to-start__arrow" d="M24 34V14M16.5 21.5 24 14l7.5 7.5"></path>
+        <rect class="site-return-to-start__packet" x="21" y="29" width="6" height="6" rx="1"></rect>
+      </svg>
+    </span>
+  </a>
+</body>
+</html>

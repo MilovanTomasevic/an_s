@@ -1,0 +1,1210 @@
+<!doctype html>
+<html lang="nl-NL" dir="ltr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#343541">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="application-name" content="advanexus">
+  <link rel="icon" href="/assets/dist/img/public/advanexus-icon-32.b5f4ba1e3910.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/dist/img/public/advanexus-icon-48.04d163424cb0.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/assets/dist/img/public/advanexus-apple-touch-icon-180.ac7a16998eb1.png" sizes="180x180">
+  <link rel="manifest" href="/site-nl.webmanifest" type="application/manifest+json">
+  <title>Beveiliging en governance | Identiteit, scope en redactie</title>
+  <meta name="description" content="Bekijk advanexus tenantisolatie, sessiecontext, rechten, RLS, geheimen en huidige beveiligingsgrenzen.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  
+  <link rel="canonical" href="https://www.advanexus.com/nl/trust/security-governance/">
+  <link rel="alternate" type="application/atom+xml" title="advanexus-gidsen" href="https://www.advanexus.com/feed-nl.xml">
+  
+    <link rel="alternate" hreflang="en-GB" href="https://www.advanexus.com/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="en-US" href="https://www.advanexus.com/us/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="de" href="https://www.advanexus.com/de/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="sl" href="https://www.advanexus.com/sl/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="sr-Latn" href="https://www.advanexus.com/sr/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="hu" href="https://www.advanexus.com/hu/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="ar" href="https://www.advanexus.com/ar/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="zh-Hans" href="https://www.advanexus.com/zh/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="ja" href="https://www.advanexus.com/ja/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="sv" href="https://www.advanexus.com/sv/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="es" href="https://www.advanexus.com/es/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="ru" href="https://www.advanexus.com/ru/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="hi" href="https://www.advanexus.com/hi/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="pt-PT" href="https://www.advanexus.com/pt/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="fi-FI" href="https://www.advanexus.com/fi/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="nb-NO" href="https://www.advanexus.com/no/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="nl-NL" href="https://www.advanexus.com/nl/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="da-DK" href="https://www.advanexus.com/da/trust/security-governance/">
+  
+  
+  
+    <link rel="alternate" hreflang="x-default" href="https://www.advanexus.com/trust/security-governance/">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="advanexus">
+  <meta property="og:title" content="Beveiliging en governance | Identiteit, scope en redactie">
+  <meta property="og:description" content="Bekijk advanexus tenantisolatie, sessiecontext, rechten, RLS, geheimen en huidige beveiligingsgrenzen.">
+  <meta property="og:url" content="https://www.advanexus.com/nl/trust/security-governance/">
+  <meta property="og:image" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta property="og:image:secure_url" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="advanexus — beheersing en bewijs voor bedrijfsuitvoering over systemen, data en door AI ondersteund werk.">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:locale:alternate" content="en_GB"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="de_DE"><meta property="og:locale:alternate" content="sl_SI"><meta property="og:locale:alternate" content="sr_RS"><meta property="og:locale:alternate" content="hu_HU"><meta property="og:locale:alternate" content="ar_AE"><meta property="og:locale:alternate" content="zh_CN"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="sv_SE"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="ru_RU"><meta property="og:locale:alternate" content="hi_IN"><meta property="og:locale:alternate" content="pt_PT"><meta property="og:locale:alternate" content="fi_FI"><meta property="og:locale:alternate" content="nb_NO"><meta property="og:locale:alternate" content="da_DK">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Beveiliging en governance | Identiteit, scope en redactie">
+  <meta name="twitter:description" content="Bekijk advanexus tenantisolatie, sessiecontext, rechten, RLS, geheimen en huidige beveiligingsgrenzen.">
+  <meta name="twitter:image" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta name="twitter:image:alt" content="advanexus — beheersing en bewijs voor bedrijfsuitvoering over systemen, data en door AI ondersteund werk.">
+  <link rel="preload" href="/assets/dist/fonts/SpaceGrotesk-variable.8e085aa43809.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/dist/css/site.f76576626e42.css">
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.advanexus.com/nl/trust/security-governance/#webpage","url":"https://www.advanexus.com/nl/trust/security-governance/","name":"Beveiliging en governance | Identiteit, scope en redactie","description":"Bekijk advanexus tenantisolatie, sessiecontext, rechten, RLS, geheimen en huidige beveiligingsgrenzen.","inLanguage":"nl-NL","isPartOf":{"@id":"https://www.advanexus.com/#website"},"publisher":{"@id":"https://www.advanexus.com/#organization"},"about":{"@id":"https://www.advanexus.com/nl/trust/#topic-trust"},"dateModified":"2026-07-30","breadcrumb":{"@id":"https://www.advanexus.com/nl/trust/security-governance/#breadcrumb"}},{"@type":"DefinedTerm","@id":"https://www.advanexus.com/nl/trust/#topic-trust","name":"Architectuur, beveiliging en vertrouwen","description":"Openbare contracten voor architectuur, beveiliging, bewijs, implementatie en functionaliteitsstatus.","url":"https://www.advanexus.com/nl/trust/"},{"@type":"BreadcrumbList","@id":"https://www.advanexus.com/nl/trust/security-governance/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.advanexus.com/nl/"},{"@type":"ListItem","position":2,"name":"Vertrouwenscentrum","item":"https://www.advanexus.com/nl/trust/"},{"@type":"ListItem","position":3,"name":"Beveiliging en governance","item":"https://www.advanexus.com/nl/trust/security-governance/"}]}]}</script>
+  <script src="/assets/dist/js/typing.d72c71ee9cf4.js" defer></script>
+  <script src="/assets/dist/js/form-safety.3b307b166fd8.js" defer></script>
+  <script src="/assets/dist/js/main.8566869dc07e.js" defer></script>
+  
+</head>
+<body data-page-id="trust-security-governance" data-page-kind="technical">
+  <a class="skip-link" href="#main-content">Naar de hoofdinhoud</a>
+
+  
+  
+  
+  
+  <header class="site-header" data-site-header>
+    <div class="site-header__bar shell">
+      <a class="brand" href="/nl/" aria-label="Homepage van advanexus">
+        
+  <img
+    class="brand__image brand__image--color"
+    src="/assets/dist/img/public/advanexus-wordmark-color.e0d75236a617.webp"
+    width="640"
+    height="102"
+    alt="advanexus"
+    decoding="async"
+    
+  >
+      </a>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Hoofdnavigatie" data-site-nav>
+        <div class="site-nav__groups">
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Platform</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Bekijk hoe kritieke uitvoering beheerst en aantoonbaar blijft.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/platform/">
+                          <span>Platformoverzicht</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/platform/world/">
+                          <span>Kies een situatie die u herkent</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/platform/system-map/">
+                          <span>Zo werkt advanexus</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/platform/assurance/">
+                          <span>advanexus Assurance</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/platform/intelligence/">
+                          <span>advanexus Intelligence</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/platform/data-operations/">
+                          <span>Data-operaties</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/platform/governed-datasets/">
+                          <span>Beheerste datasets</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/platform/controlled-analytics/">
+                          <span>Beheerste analytics</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/platform/anpy/">
+                          <span>Beheerste Python met ANPy</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/platform/data-quality/">
+                          <span>Datakwaliteit</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Oplossingen</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Begin bij het bedrijfsprobleem en het meetbare resultaat.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/industries/">
+                          <span>Sectoren en operationele contexten</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/solutions/audit-ready-data-operations/">
+                          <span>Auditklare data-operaties</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/solutions/regulatory-reporting/">
+                          <span>Wettelijke rapportage</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/solutions/controlled-data-migration/">
+                          <span>Beheerste datamigratie</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/solutions/trusted-bi-ai-inputs/">
+                          <span>Betrouwbare input voor BI en AI</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/solutions/governed-analytics-delivery/">
+                          <span>Beheerste levering van analytics</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/solutions/evidence-backed-investigation/">
+                          <span>Met bewijs onderbouwd onderzoek</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Vertrouwen</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Onderzoek hoe beheersing, bewijs en productgrenzen werken.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/trust/">
+                          <span>Vertrouwenscentrum</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/trust/architecture/">
+                          <span>Architectuur</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link is-current" href="/nl/trust/security-governance/" aria-current="page">
+                          <span>Beveiliging en governance</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/trust/evidence-model/">
+                          <span>Bewijsmodel</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/trust/deployment/">
+                          <span>Implementatie</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/trust/capability-status/">
+                          <span>Functionaliteitsstatus</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/trust/responsible-ai/">
+                          <span>Verantwoorde AI</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Bronnen</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Antwoorden, voorbeelden en bewijs voor een weloverwogen beslissing.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/resources/">
+                          <span>Bronnenoverzicht</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/resources/guides/">
+                          <span>Gidsen en inzichten</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/resources/glossary/">
+                          <span>Productwoordenlijst</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/resources/changelog/">
+                          <span>Functionaliteitsnotities</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/faqs/">
+                          <span>Veelgestelde vragen</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/nl/search/">
+                          <span>Openbare inhoud doorzoeken</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+
+          
+            
+              <a class="site-nav__link"
+                 href="/nl/integrations/">
+                Integraties
+                
+              </a>
+            
+          
+            
+              <a class="site-nav__link"
+                 href="/nl/pricing/">
+                Prijzen
+                
+              </a>
+            
+          
+        </div>
+
+        <div class="site-nav__actions">
+          
+            
+              <a class="button button--quiet" href="https://live.advanexus.com/" rel="noopener noreferrer">
+                Liveplatform openen
+                <svg class="icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5 15"/></svg><span class="visually-hidden"> Opent de advanexus-applicatie</span>
+              </a>
+            
+          
+            
+              <a class="button button--primary" href="/nl/demo-request/">
+                Een kritieke gegevensstroom bespreken
+                
+              </a>
+            
+          
+        </div>
+      </nav>
+
+      <div class="site-header__utilities">
+        <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="site-navigation" aria-label="Navigatie openen" data-nav-toggle data-open-label="Navigatie openen" data-close-label="Navigatie sluiten">
+          <span class="nav-toggle__label" data-nav-toggle-label>Navigatie openen</span>
+          <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+
+        
+          <details class="language-switcher" data-language-switcher>
+            <summary class="language-switcher__trigger" aria-controls="language-switcher-panel" aria-label="Taal kiezen · Huidige taal: Nederlands">
+              <span class="language-switcher__identity" aria-hidden="true">
+                <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇳🇱</span>
+              </span>
+            </summary>
+            <ul class="language-switcher__panel" id="language-switcher-panel" role="list">
+              
+                <li>
+                  <a class="language-switcher__option" href="/trust/security-governance/" lang="en-GB" hreflang="en-GB">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇬🇧</span>
+                    <bdi class="language-switcher__name" lang="en-GB" dir="ltr">English (UK)</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/us/trust/security-governance/" lang="en-US" hreflang="en-US">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇺🇸</span>
+                    <bdi class="language-switcher__name" lang="en-US" dir="ltr">English (US)</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/de/trust/security-governance/" lang="de" hreflang="de">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇩🇪</span>
+                    <bdi class="language-switcher__name" lang="de" dir="ltr">Deutsch</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sl/trust/security-governance/" lang="sl" hreflang="sl">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇸🇮</span>
+                    <bdi class="language-switcher__name" lang="sl" dir="ltr">Slovenščina</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sr/trust/security-governance/" lang="sr-Latn" hreflang="sr-Latn">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇷🇸</span>
+                    <bdi class="language-switcher__name" lang="sr-Latn" dir="ltr">Srpski</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/hu/trust/security-governance/" lang="hu" hreflang="hu">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇭🇺</span>
+                    <bdi class="language-switcher__name" lang="hu" dir="ltr">Magyar</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ar/trust/security-governance/" lang="ar" hreflang="ar">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇦🇪</span>
+                    <bdi class="language-switcher__name" lang="ar" dir="rtl">العربية</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/zh/trust/security-governance/" lang="zh-Hans" hreflang="zh-Hans">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇨🇳</span>
+                    <bdi class="language-switcher__name" lang="zh-Hans" dir="ltr">简体中文</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ja/trust/security-governance/" lang="ja" hreflang="ja">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇯🇵</span>
+                    <bdi class="language-switcher__name" lang="ja" dir="ltr">日本語</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sv/trust/security-governance/" lang="sv" hreflang="sv">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇸🇪</span>
+                    <bdi class="language-switcher__name" lang="sv" dir="ltr">Svenska</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/es/trust/security-governance/" lang="es" hreflang="es">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇪🇸</span>
+                    <bdi class="language-switcher__name" lang="es" dir="ltr">Español</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ru/trust/security-governance/" lang="ru" hreflang="ru">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇷🇺</span>
+                    <bdi class="language-switcher__name" lang="ru" dir="ltr">Русский</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/hi/trust/security-governance/" lang="hi" hreflang="hi">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇮🇳</span>
+                    <bdi class="language-switcher__name" lang="hi" dir="ltr">हिन्दी</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/pt/trust/security-governance/" lang="pt-PT" hreflang="pt-PT">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇵🇹</span>
+                    <bdi class="language-switcher__name" lang="pt-PT" dir="ltr">Português</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/fi/trust/security-governance/" lang="fi-FI" hreflang="fi-FI">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇫🇮</span>
+                    <bdi class="language-switcher__name" lang="fi-FI" dir="ltr">Suomi</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/no/trust/security-governance/" lang="nb-NO" hreflang="nb-NO">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇳🇴</span>
+                    <bdi class="language-switcher__name" lang="nb-NO" dir="ltr">Norsk bokmål</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/nl/trust/security-governance/" lang="nl-NL" hreflang="nl-NL" aria-current="page">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇳🇱</span>
+                    <bdi class="language-switcher__name" lang="nl-NL" dir="ltr">Nederlands</bdi>
+                    
+                      <svg class="icon language-switcher__active-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m4 10 4 4 8-8"/></svg>
+                      <span class="visually-hidden">— Huidige taal</span>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/da/trust/security-governance/" lang="da-DK" hreflang="da-DK">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇩🇰</span>
+                    <bdi class="language-switcher__name" lang="da-DK" dir="ltr">Dansk</bdi>
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          </details>
+        
+
+        <a class="header-search"
+           href="/nl/search/#site-search-query"
+           aria-label="Zoeken op de openbare website"
+           data-header-search>
+          <svg class="header-search__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="10.75" cy="10.75" r="6.25"/>
+            <path d="m15.5 15.5 4.25 4.25"/>
+          </svg>
+          <span class="visually-hidden">Zoeken op de openbare website</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main" tabindex="-1">
+    
+  
+    <nav class="breadcrumbs shell" aria-label="Broodkruimelnavigatie">
+      <ol role="list">
+        
+          <li>
+            
+              <a href="/nl/">Home</a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/nl/trust/">Vertrouwenscentrum</a>
+            
+          </li>
+        
+          <li aria-current="page">
+            
+              Beveiliging en governance
+            
+          </li>
+        
+      </ol>
+    </nav>
+  
+  <section class="hero hero--detail" aria-labelledby="page-title">
+    <div class="shell hero__layout">
+      <div class="hero__content">
+        <p class="eyebrow ">Beveiliging en governance</p>
+        <h1 id="page-title">Beveiligingsbeslissingen blijven servergestuurd en scopegebonden.</h1>
+        <p class="hero__lead">Zichtbaarheid in de browser is geen autorisatiegrens. Beveiligde routes, applicatiediensten en repositorypredicaten beoordelen identiteit, tenant, project en rechtencontext opnieuw waar de bewerking dit vereist.</p>
+        
+        <div class="hero__actions">
+          <a class="button button--primary" href="/nl/contact/">Contact opnemen over beveiliging <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="hero__visual">
+  
+  
+  
+  
+  
+  
+  
+    
+  <figure class="product-visual product-visual--boundary visual-story" data-visual-contract="permission-boundaries" data-visual-story>
+    <figcaption class="visually-hidden">Zichtbaarheid in de browser is geen autorisatiegrens. Beveiligde routes, applicatiediensten en repositorypredicaten beoordelen identiteit, tenant, project en rechtencontext opnieuw waar de bewerking dit vereist.</figcaption>
+    <div class="scope-model">
+      <div class="scope-model__frame scope-model__frame--outer"><span>Beveiliging en governance</span></div>
+      <div class="scope-model__frame scope-model__frame--middle" aria-hidden="true"></div>
+      <div class="scope-model__frame scope-model__frame--inner" aria-hidden="true"></div>
+      <ol role="list">
+        
+          <li>
+            <button class="scope-model__node is-active" type="button" data-story-step="0" aria-pressed="true">
+              <span aria-hidden="true">01</span>
+              <strong>Tenant en Project vormen de actieve beveiligingscontext.</strong>
+            </button>
+          </li>
+        
+          <li>
+            <button class="scope-model__node" type="button" data-story-step="1" aria-pressed="false">
+              <span aria-hidden="true">02</span>
+              <strong>Het sessieregister is na aanmelden bepalend.</strong>
+            </button>
+          </li>
+        
+          <li>
+            <button class="scope-model__node" type="button" data-story-step="2" aria-pressed="false">
+              <span aria-hidden="true">03</span>
+              <strong>SAML wordt met expliciete grenzen geleverd.</strong>
+            </button>
+          </li>
+        
+          <li>
+            <button class="scope-model__node" type="button" data-story-step="3" aria-pressed="false">
+              <span aria-hidden="true">04</span>
+              <strong>RLS en runtimefilters zijn niet onderling verwisselbaar.</strong>
+            </button>
+          </li>
+        
+          <li>
+            <button class="scope-model__node" type="button" data-story-step="4" aria-pressed="false">
+              <span aria-hidden="true">05</span>
+              <strong>Geheimen blijven buiten algemeen bewijs.</strong>
+            </button>
+          </li>
+        
+      </ol>
+    </div>
+    
+  <div class="visual-story__readout" data-typewriter-scope>
+    
+      <article class="visual-story__panel" data-story-panel="0">
+        <strong>Tenant en Project vormen de actieve beveiligingscontext.</strong>
+        <p data-typewriter-copy="body">Tenant scheidt organisaties en data. Project kiest lidmaatschap, schema en uitvoeringsscope binnen de tenant. Het actieve Project is een ondertekende, op de server gevalideerde sessiebeslissing, geen cosmetisch filter.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="1">
+        <strong>Het sessieregister is na aanmelden bepalend.</strong>
+        <p data-typewriter-copy="body">Elk geauthenticeerd verzoek moet overeenkomen met een actief, actorgebonden JTI-registerrecord, tenant- en gebruikersstatus, levensduur van huidig beleid, inactiviteitstime-out en actieve Projectcontext. Registerfout, ontbrekend ondertekeningsmateriaal, intrekking of identiteitsmismatch faalt gesloten en valt niet terug op anonieme of verouderde browsercontext.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="2">
+        <strong>SAML wordt met expliciete grenzen geleverd.</strong>
+        <p data-typewriter-copy="body">Tenant-SAML-metadata, login en ACS, koppeling/JIT van externe identiteit, domeinbeleid en door de IdP bevestigde MFA-evidence zijn geïmplementeerd. Eindpuntgeneratie gebruikt de servergestuurde openbare oorsprong en AuthnRequest-correlatie gebruikt kortlevende ondertekende status die aan provider en verzoek is gebonden.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="3">
+        <strong>RLS en runtimefilters zijn niet onderling verwisselbaar.</strong>
+        <p data-typewriter-copy="body">Analytics-RLS is servergestuurd en beschermd. Een runtimefilter van de client kan geen RLS-herkomstmetadata vervalsen en cache-identiteiten omvatten rechten- en RLS-scope in plaats van alleen op SQL-tekst te vertrouwen.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="4">
+        <strong>Geheimen blijven buiten algemeen bewijs.</strong>
+        <p data-typewriter-copy="body">Inloggegevens, tokens, autorisatieheaders, privésleutels en materiaal van ondertekende URL&#39;s horen niet in openbare metadata, chatprompts of algemene auditpayloads. Gemaskeerde tekst is geen uitvoerbaar inloggegeven. Eenmalige onthulling is begrensd, geconfigureerd versleuteld, kortlevend en vastgelegd zonder het onthulde geheim in algemeen bewijs op te slaan.</p>
+      </article>
+    
+    <span class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" data-typewriter-status></span>
+  </div>
+  </figure>
+  </div>
+    </div>
+  </section>
+
+  
+  
+  <section class="content-section content-section--1 content-section--tenant-project-security" data-section-visual="tenant-project-security" aria-labelledby="section-1-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="01">
+      <p class="section-index" aria-hidden="true">01</p>
+      <h2 id="section-1-title">Tenant en Project vormen de actieve beveiligingscontext.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Tenant scheidt organisaties en data. Project kiest lidmaatschap, schema en uitvoeringsscope binnen de tenant. Het actieve Project is een ondertekende, op de server gevalideerde sessiebeslissing, geen cosmetisch filter.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--2 content-section--session-registry" data-section-visual="session-registry" aria-labelledby="section-2-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="02">
+      <p class="section-index" aria-hidden="true">02</p>
+      <h2 id="section-2-title">Het sessieregister is na aanmelden bepalend.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Elk geauthenticeerd verzoek moet overeenkomen met een actief, actorgebonden JTI-registerrecord, tenant- en gebruikersstatus, levensduur van huidig beleid, inactiviteitstime-out en actieve Projectcontext. Registerfout, ontbrekend ondertekeningsmateriaal, intrekking of identiteitsmismatch faalt gesloten en valt niet terug op anonieme of verouderde browsercontext.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+          
+            
+            
+            <div class="content-grid content-grid--session-registry content-grid--statements" data-item-layout="statements" data-item-count="3">
+              
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">01</span><span class="content-item__copy">Projectwisseling is een CSRF-beveiligde serveractie die context opnieuw uitgeeft zonder de oorspronkelijke token- of beleidsvervaldatum te verlengen.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">02</span><span class="content-item__copy">Afmelden is een CSRF-beveiligde POST; wachtwoordwijziging/-reset en accountverwijdering trekken actieve sessies in.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">03</span><span class="content-item__copy">JSON-verzoeken ontvangen een gestructureerde authenticatiefout en cookieverwijdering; browsernavigatie wist context vóór omleiding.</span></p></article>
+  
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--3 content-section--saml-policy" data-section-visual="saml-policy" aria-labelledby="section-3-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="03">
+      <p class="section-index" aria-hidden="true">03</p>
+      <h2 id="section-3-title">SAML wordt met expliciete grenzen geleverd.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Tenant-SAML-metadata, login en ACS, koppeling/JIT van externe identiteit, domeinbeleid en door de IdP bevestigde MFA-evidence zijn geïmplementeerd. Eindpuntgeneratie gebruikt de servergestuurde openbare oorsprong en AuthnRequest-correlatie gebruikt kortlevende ondertekende status die aan provider en verzoek is gebonden.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+          
+            
+            
+            <div class="content-grid content-grid--saml-policy content-grid--statements" data-item-layout="statements" data-item-count="3">
+              
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">01</span><span class="content-item__copy">SAML maakt geen Project-lidmaatschap; de gebruiker heeft nog steeds geautoriseerde tenant- en projecttoegang nodig.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">02</span><span class="content-item__copy">TOTP, WebAuthn, hersteluitdagingen op applicatieniveau en een volledige UI voor sessie-inventaris/intrekken-alles zijn geen huidige functionaliteiten.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">03</span><span class="content-item__copy">Niet-ondersteund wachtwoord-MFA-beleid wordt geweigerd in plaats van als schijncontrole opgeslagen.</span></p></article>
+  
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--0 content-section--rls-cache-boundary" data-section-visual="rls-cache-boundary" aria-labelledby="section-4-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="04">
+      <p class="section-index" aria-hidden="true">04</p>
+      <h2 id="section-4-title">RLS en runtimefilters zijn niet onderling verwisselbaar.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Analytics-RLS is servergestuurd en beschermd. Een runtimefilter van de client kan geen RLS-herkomstmetadata vervalsen en cache-identiteiten omvatten rechten- en RLS-scope in plaats van alleen op SQL-tekst te vertrouwen.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--1 content-section--secret-redaction" data-section-visual="secret-redaction" aria-labelledby="section-5-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="05">
+      <p class="section-index" aria-hidden="true">05</p>
+      <h2 id="section-5-title">Geheimen blijven buiten algemeen bewijs.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Inloggegevens, tokens, autorisatieheaders, privésleutels en materiaal van ondertekende URL&#39;s horen niet in openbare metadata, chatprompts of algemene auditpayloads. Gemaskeerde tekst is geen uitvoerbaar inloggegeven. Eenmalige onthulling is begrensd, geconfigureerd versleuteld, kortlevend en vastgelegd zonder het onthulde geheim in algemeen bewijs op te slaan.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--2 content-section--iam-boundary" data-section-visual="iam-boundary" aria-labelledby="section-6-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="06">
+      <p class="section-index" aria-hidden="true">06</p>
+      <h2 id="section-6-title">De huidige IAM-sterkte wordt nauwkeurig benoemd.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Modulespecifieke rechtencontracten bestaan, maar een universeel opgeslagen negatief recht en platformbrede DENY-wins-samenvoeging zijn niet volledig. Applicatie-MFA en step-up-gedrag mogen niet verder worden gesuggereerd dan de huidige identity-provider- en sessiecontroles.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+    <section class="related-pages" aria-labelledby="related-title">
+      <div class="shell">
+        <div class="related-pages__heading">
+          <p class="eyebrow ">Verder verkennen</p>
+          
+    <h2 id="related-title">Verwante onderwerpen</h2>
+  
+        </div>
+        <div class="related-pages__grid">
+          
+            <a class="related-card" href="/nl/trust/architecture/">
+              <span class="related-card__eyebrow ">Vertrouwensarchitectuur</span>
+              <strong>Expliciete grenzen verbinden het platform zonder verantwoordelijkheid samen te voegen.</strong>
+              <p>advanexus is een modulair platform met afzonderlijke tenant- en beheeroppervlakken, control- en tenantdatastores, workloadwachtrijen, opslagadapters en een vertrouwde grens voor de Python-runtime.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+            <a class="related-card" href="/nl/trust/evidence-model/">
+              <span class="related-card__eyebrow ">Bewijsmodel</span>
+              <strong>Bewijs is het sterkst wanneer bron, scope en beperkingen zichtbaar blijven.</strong>
+              <p>advanexus verbindt ondersteunde canonieke gebeurtenissen en modulespecifiek bewijs in een rechtenbewust onderzoeksmodel, met behoud van het verschil tussen bronrecord, projectie en menselijke werkstroom.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+            <a class="related-card" href="/nl/contact/">
+              <span class="related-card__eyebrow ">Contact</span>
+              <strong>Begin met een duidelijk doel en precies genoeg context.</strong>
+              <p>De eerste statische website gebruikt directe e-mail in plaats van een ingebedde formulierbackend. Stuur uitsluitend informatie die nodig is om het gesprek te routeren en geen inloggegevens, productiedata of gevoelige records.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+        </div>
+      </div>
+    </section>
+  
+  
+  <section class="final-cta" aria-labelledby="final-cta-title">
+    <div class="shell final-cta__layout">
+      <div>
+        <p class="eyebrow ">Volgende stap</p>
+        <h2 id="final-cta-title">Begin met de gegevensstroom waarin geen ruimte is voor onduidelijkheid.</h2>
+      </div>
+      <div>
+        <p>Breng de relevante systemen, eigenaren, regels, leveringsverplichtingen en bewijsvereisten in kaart.</p>
+        <a class="button button--ink" href="/nl/demo-request/">Een kritieke gegevensstroom bespreken <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  
+  
+  
+  
+  <footer class="site-footer">
+    <div class="shell site-footer__layout">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="/nl/" aria-label="Homepage van advanexus">
+          
+  <img
+    class="brand__image brand__image--light"
+    src="/assets/dist/img/public/advanexus-wordmark-light.a39fb51538b6.webp"
+    width="640"
+    height="102"
+    alt="advanexus"
+    decoding="async"
+    loading="lazy" fetchpriority="low"
+  >
+        </a>
+        <div class="site-footer__brand-story" data-footer-brand-story>
+          <p class="brand-story__title"><strong>Vooruitgang die alles verbonden houdt.</strong></p>
+          <p class="brand-story__body"><bdi dir="ltr">advanexus</bdi> brengt <bdi dir="ltr">advance</bdi> en <bdi dir="ltr">nexus</bdi> samen: vooruitgaan zonder de verbinding tussen data, beslissingen, verantwoordingsplicht en bewijs te verbreken.</p>
+        </div>
+        
+          <nav class="site-footer__orientation" aria-label="Vooruitgang die alles verbonden houdt.">
+            <ul role="list">
+              
+                <li>
+                  <a href="/nl/platform/world/" data-footer-orientation-link="business">
+                    <span>Kies een situatie die u herkent</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </li>
+              
+              
+                <li>
+                  <a href="/nl/platform/system-map/" data-footer-orientation-link="system">
+                    <span>Zo werkt advanexus</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </li>
+              
+            </ul>
+          </nav>
+        
+        
+          <a class="text-link" href="https://live.advanexus.com/" rel="noopener noreferrer">Platform openen <span aria-hidden="true">↗</span><span class="visually-hidden"> Opent de advanexus-applicatie</span></a>
+        
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Voettekstnavigatie">
+        
+          
+          <section class="site-footer__group" aria-label="Platform">
+            <h2 class="site-footer__group-heading" id="footer-group-1">Platform</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-1-summary">Platform</summary>
+              <ul role="list">
+                
+                  <li><a href="/nl/platform/">Platformoverzicht</a></li>
+                
+                  <li><a href="/nl/platform/assurance/">advanexus Assurance</a></li>
+                
+                  <li><a href="/nl/platform/intelligence/">advanexus Intelligence</a></li>
+                
+                  <li><a href="/nl/platform/data-operations/">Data-operaties</a></li>
+                
+                  <li><a href="/nl/platform/controlled-analytics/">Beheerste analytics</a></li>
+                
+                  <li><a href="/nl/advanexus/">advanexus</a></li>
+                
+                  <li><a href="/nl/platform/system-map/">Zo werkt advanexus</a></li>
+                
+                  <li><a href="/nl/platform/world/">Kies een situatie die u herkent</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="Oplossingen">
+            <h2 class="site-footer__group-heading" id="footer-group-2">Oplossingen</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-2-summary">Oplossingen</summary>
+              <ul role="list">
+                
+                  <li><a href="/nl/solutions/">Oplossingen</a></li>
+                
+                  <li><a href="/nl/industries/">Sectoren</a></li>
+                
+                  <li><a href="/nl/integrations/">Integraties</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="Vertrouwen en bronnen">
+            <h2 class="site-footer__group-heading" id="footer-group-3">Vertrouwen en bronnen</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-3-summary">Vertrouwen en bronnen</summary>
+              <ul role="list">
+                
+                  <li><a href="/nl/trust/">Vertrouwenscentrum</a></li>
+                
+                  <li><a href="/nl/trust/capability-status/">Functionaliteitsstatus</a></li>
+                
+                  <li><a href="/nl/trust/responsible-ai/">Verantwoorde AI</a></li>
+                
+                  <li><a href="/nl/resources/">Bronnen</a></li>
+                
+                  <li><a href="/nl/faqs/">Veelgestelde vragen</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="Organisatie en juridisch">
+            <h2 class="site-footer__group-heading" id="footer-group-4">Organisatie en juridisch</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-4-summary">Organisatie en juridisch</summary>
+              <ul role="list">
+                
+                  <li><a href="/nl/pricing/">Prijzen</a></li>
+                
+                  <li><a href="/nl/company/">Organisatie</a></li>
+                
+                  <li><a href="/nl/contact/">Contact</a></li>
+                
+                  <li><a href="/nl/demo-request/">Een kritieke gegevensstroom bespreken</a></li>
+                
+                  <li><a href="/nl/cookie-settings/">Cookie-instellingen</a></li>
+                
+                  <li><a href="/nl/privacy-policy/">Privacyverklaring</a></li>
+                
+                  <li><a href="/nl/cookie-policy/">Cookiebeleid</a></li>
+                
+                  <li><a href="/nl/term-conditions/">Algemene voorwaarden</a></li>
+                
+                  <li><a href="/nl/accessibility/">Toegankelijkheid</a></li>
+                
+                  <li><a href="/nl/sitemap/">Volledige sitemap</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+      </nav>
+    </div>
+
+    <div class="shell site-footer__legal">
+      <p>&copy; 2026 advanexus. Alle rechten voorbehouden.</p>
+      <p>Beweeg sneller. Houd de regie. Toon het resultaat aan.</p>
+      <a href="mailto:info@advanexus.com">info@advanexus.com</a>
+    </div>
+  </footer>
+
+  
+  <a class="site-return-to-start" href="#page-title"
+     data-back-to-top data-visible="false" aria-label="Terug naar boven">
+    <span class="site-return-to-start__label" aria-hidden="true">Terug naar boven</span>
+    <span class="site-return-to-start__signal" aria-hidden="true">
+      <svg viewBox="0 0 48 48" focusable="false">
+        <circle class="site-return-to-start__track" cx="24" cy="24" r="20" pathLength="100"></circle>
+        <circle class="site-return-to-start__progress" data-back-to-top-progress
+                cx="24" cy="24" r="20" pathLength="100"></circle>
+        <path class="site-return-to-start__arrow" d="M24 34V14M16.5 21.5 24 14l7.5 7.5"></path>
+        <rect class="site-return-to-start__packet" x="21" y="29" width="6" height="6" rx="1"></rect>
+      </svg>
+    </span>
+  </a>
+</body>
+</html>
