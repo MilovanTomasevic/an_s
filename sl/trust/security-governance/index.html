@@ -1,0 +1,1210 @@
+<!doctype html>
+<html lang="sl" dir="ltr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#343541">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="application-name" content="advanexus">
+  <link rel="icon" href="/assets/dist/img/public/advanexus-icon-32.b5f4ba1e3910.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/dist/img/public/advanexus-icon-48.04d163424cb0.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/assets/dist/img/public/advanexus-apple-touch-icon-180.ac7a16998eb1.png" sizes="180x180">
+  <link rel="manifest" href="/site-sl.webmanifest" type="application/manifest+json">
+  <title>Varnost in upravljanje | Identiteta, obseg, dovoljenja in zakrivanje</title>
+  <meta name="description" content="Preglejte izolacijo Tenant, kontekst seje, dovoljenja, RLS, skrivnosti in trenutne varnostne meje advanexusa.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  
+  <link rel="canonical" href="https://www.advanexus.com/sl/trust/security-governance/">
+  <link rel="alternate" type="application/atom+xml" title="vodniki advanexus" href="https://www.advanexus.com/feed-sl.xml">
+  
+    <link rel="alternate" hreflang="en-GB" href="https://www.advanexus.com/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="en-US" href="https://www.advanexus.com/us/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="de" href="https://www.advanexus.com/de/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="sl" href="https://www.advanexus.com/sl/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="sr-Latn" href="https://www.advanexus.com/sr/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="hu" href="https://www.advanexus.com/hu/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="ar" href="https://www.advanexus.com/ar/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="zh-Hans" href="https://www.advanexus.com/zh/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="ja" href="https://www.advanexus.com/ja/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="sv" href="https://www.advanexus.com/sv/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="es" href="https://www.advanexus.com/es/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="ru" href="https://www.advanexus.com/ru/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="hi" href="https://www.advanexus.com/hi/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="pt-PT" href="https://www.advanexus.com/pt/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="fi-FI" href="https://www.advanexus.com/fi/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="nb-NO" href="https://www.advanexus.com/no/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="nl-NL" href="https://www.advanexus.com/nl/trust/security-governance/">
+  
+    <link rel="alternate" hreflang="da-DK" href="https://www.advanexus.com/da/trust/security-governance/">
+  
+  
+  
+    <link rel="alternate" hreflang="x-default" href="https://www.advanexus.com/trust/security-governance/">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="advanexus">
+  <meta property="og:title" content="Varnost in upravljanje | Identiteta, obseg, dovoljenja in zakrivanje">
+  <meta property="og:description" content="Preglejte izolacijo Tenant, kontekst seje, dovoljenja, RLS, skrivnosti in trenutne varnostne meje advanexusa.">
+  <meta property="og:url" content="https://www.advanexus.com/sl/trust/security-governance/">
+  <meta property="og:image" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta property="og:image:secure_url" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="advanexus — nadzor in dokazila za kritične poslovne procese prek sistemov, podatkov in dela s pomočjo umetne inteligence.">
+  <meta property="og:locale" content="sl_SI">
+  <meta property="og:locale:alternate" content="en_GB"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="de_DE"><meta property="og:locale:alternate" content="sr_RS"><meta property="og:locale:alternate" content="hu_HU"><meta property="og:locale:alternate" content="ar_AE"><meta property="og:locale:alternate" content="zh_CN"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="sv_SE"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="ru_RU"><meta property="og:locale:alternate" content="hi_IN"><meta property="og:locale:alternate" content="pt_PT"><meta property="og:locale:alternate" content="fi_FI"><meta property="og:locale:alternate" content="nb_NO"><meta property="og:locale:alternate" content="nl_NL"><meta property="og:locale:alternate" content="da_DK">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Varnost in upravljanje | Identiteta, obseg, dovoljenja in zakrivanje">
+  <meta name="twitter:description" content="Preglejte izolacijo Tenant, kontekst seje, dovoljenja, RLS, skrivnosti in trenutne varnostne meje advanexusa.">
+  <meta name="twitter:image" content="https://www.advanexus.com/assets/dist/icons/social-card.b89404f2b760.png">
+  <meta name="twitter:image:alt" content="advanexus — nadzor in dokazila za kritične poslovne procese prek sistemov, podatkov in dela s pomočjo umetne inteligence.">
+  <link rel="preload" href="/assets/dist/fonts/SpaceGrotesk-variable.8e085aa43809.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/dist/css/site.f76576626e42.css">
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.advanexus.com/sl/trust/security-governance/#webpage","url":"https://www.advanexus.com/sl/trust/security-governance/","name":"Varnost in upravljanje | Identiteta, obseg, dovoljenja in zakrivanje","description":"Preglejte izolacijo Tenant, kontekst seje, dovoljenja, RLS, skrivnosti in trenutne varnostne meje advanexusa.","inLanguage":"sl","isPartOf":{"@id":"https://www.advanexus.com/#website"},"publisher":{"@id":"https://www.advanexus.com/#organization"},"about":{"@id":"https://www.advanexus.com/sl/trust/#topic-trust"},"dateModified":"2026-07-30","breadcrumb":{"@id":"https://www.advanexus.com/sl/trust/security-governance/#breadcrumb"}},{"@type":"DefinedTerm","@id":"https://www.advanexus.com/sl/trust/#topic-trust","name":"Arhitektura, varnost in zaupanje","description":"Javne pogodbe za arhitekturo, varnost, dokazila, uvedbo in status zmožnosti.","url":"https://www.advanexus.com/sl/trust/"},{"@type":"BreadcrumbList","@id":"https://www.advanexus.com/sl/trust/security-governance/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Domov","item":"https://www.advanexus.com/sl/"},{"@type":"ListItem","position":2,"name":"Središče zaupanja","item":"https://www.advanexus.com/sl/trust/"},{"@type":"ListItem","position":3,"name":"Varnost in upravljanje","item":"https://www.advanexus.com/sl/trust/security-governance/"}]}]}</script>
+  <script src="/assets/dist/js/typing.d72c71ee9cf4.js" defer></script>
+  <script src="/assets/dist/js/form-safety.3b307b166fd8.js" defer></script>
+  <script src="/assets/dist/js/main.8566869dc07e.js" defer></script>
+  
+</head>
+<body data-page-id="trust-security-governance" data-page-kind="technical">
+  <a class="skip-link" href="#main-content">Preskoči na glavno vsebino</a>
+
+  
+  
+  
+  
+  <header class="site-header" data-site-header>
+    <div class="site-header__bar shell">
+      <a class="brand" href="/sl/" aria-label="Domača stran advanexus">
+        
+  <img
+    class="brand__image brand__image--color"
+    src="/assets/dist/img/public/advanexus-wordmark-color.e0d75236a617.webp"
+    width="640"
+    height="102"
+    alt="advanexus"
+    decoding="async"
+    
+  >
+      </a>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Glavna navigacija" data-site-nav>
+        <div class="site-nav__groups">
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Platforma</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Oglejte si, kako kritični procesi ostanejo nadzorovani in dokazljivi.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/">
+                          <span>Pregled platforme</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/world/">
+                          <span>Izberite situacijo, ki jo prepoznate</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/system-map/">
+                          <span>Kako deluje advanexus</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/assurance/">
+                          <span>advanexus Assurance</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/intelligence/">
+                          <span>advanexus Intelligence</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/data-operations/">
+                          <span>Podatkovne operacije</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/governed-datasets/">
+                          <span>Upravljani Dataseti</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/controlled-analytics/">
+                          <span>Nadzorovana analitika</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/anpy/">
+                          <span>ANPy za upravljani Python</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/platform/data-quality/">
+                          <span>Data Quality</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Rešitve</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Začnite s poslovnim problemom in merljivim rezultatom.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/industries/">
+                          <span>Panoge in operativni konteksti</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/solutions/audit-ready-data-operations/">
+                          <span>Podatkovne operacije, pripravljene na revizijo</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/solutions/regulatory-reporting/">
+                          <span>Regulatorno poročanje</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/solutions/controlled-data-migration/">
+                          <span>Nadzorovana migracija podatkov</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/solutions/trusted-bi-ai-inputs/">
+                          <span>Zaupanja vredni vhodi za BI in AI</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/solutions/governed-analytics-delivery/">
+                          <span>Upravljana dostava analitike</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/solutions/evidence-backed-investigation/">
+                          <span>Preiskava, podprta z dokazili</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Zaupanje</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Preverite, kako delujejo nadzor, dokazila in meje izdelka.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/">
+                          <span>Središče zaupanja</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/architecture/">
+                          <span>Arhitektura</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link is-current" href="/sl/trust/security-governance/" aria-current="page">
+                          <span>Varnost in upravljanje</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/evidence-model/">
+                          <span>Model dokazil</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/deployment/">
+                          <span>Uvedba</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/capability-status/">
+                          <span>Status zmožnosti</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/trust/responsible-ai/">
+                          <span>Odgovorna umetna inteligenca</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+            <details class="nav-group" data-nav-group>
+              <summary class="nav-group__trigger">
+                <span>Viri</span>
+                <svg class="icon icon--chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 7.5 5 5 5-5"/></svg>
+              </summary>
+              <div class="nav-group__panel">
+                <p class="nav-group__intro">Odgovori, primeri in dokazila za informirano odločitev.</p>
+                <ul class="nav-group__list" role="list">
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/resources/">
+                          <span>Pregled virov</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/resources/guides/">
+                          <span>Vodniki in vpogledi</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/resources/glossary/">
+                          <span>Slovar izdelka</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/resources/changelog/">
+                          <span>Opombe o zmožnostih</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/faqs/">
+                          <span>Pogosta vprašanja</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        <a class="nav-group__link" href="/sl/search/">
+                          <span>Preišči javne vsebine</span>
+                          
+                        </a>
+                      </li>
+                    
+                  
+                </ul>
+              </div>
+            </details>
+          
+
+          
+            
+              <a class="site-nav__link"
+                 href="/sl/integrations/">
+                Integracije
+                
+              </a>
+            
+          
+            
+              <a class="site-nav__link"
+                 href="/sl/pricing/">
+                Cene
+                
+              </a>
+            
+          
+        </div>
+
+        <div class="site-nav__actions">
+          
+            
+              <a class="button button--quiet" href="https://live.advanexus.com/" rel="noopener noreferrer">
+                Odpri platformo v živo
+                <svg class="icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5 15"/></svg><span class="visually-hidden"> Odpre aplikacijo advanexus</span>
+              </a>
+            
+          
+            
+              <a class="button button--primary" href="/sl/demo-request/">
+                Pogovorimo se o kritičnem toku
+                
+              </a>
+            
+          
+        </div>
+      </nav>
+
+      <div class="site-header__utilities">
+        <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="site-navigation" aria-label="Odpri navigacijo" data-nav-toggle data-open-label="Odpri navigacijo" data-close-label="Zapri navigacijo">
+          <span class="nav-toggle__label" data-nav-toggle-label>Odpri navigacijo</span>
+          <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+
+        
+          <details class="language-switcher" data-language-switcher>
+            <summary class="language-switcher__trigger" aria-controls="language-switcher-panel" aria-label="Izberite jezik · Trenutni jezik: Slovenščina">
+              <span class="language-switcher__identity" aria-hidden="true">
+                <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇸🇮</span>
+              </span>
+            </summary>
+            <ul class="language-switcher__panel" id="language-switcher-panel" role="list">
+              
+                <li>
+                  <a class="language-switcher__option" href="/trust/security-governance/" lang="en-GB" hreflang="en-GB">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇬🇧</span>
+                    <bdi class="language-switcher__name" lang="en-GB" dir="ltr">English (UK)</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/us/trust/security-governance/" lang="en-US" hreflang="en-US">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇺🇸</span>
+                    <bdi class="language-switcher__name" lang="en-US" dir="ltr">English (US)</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/de/trust/security-governance/" lang="de" hreflang="de">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇩🇪</span>
+                    <bdi class="language-switcher__name" lang="de" dir="ltr">Deutsch</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sl/trust/security-governance/" lang="sl" hreflang="sl" aria-current="page">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇸🇮</span>
+                    <bdi class="language-switcher__name" lang="sl" dir="ltr">Slovenščina</bdi>
+                    
+                      <svg class="icon language-switcher__active-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m4 10 4 4 8-8"/></svg>
+                      <span class="visually-hidden">— Trenutni jezik</span>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sr/trust/security-governance/" lang="sr-Latn" hreflang="sr-Latn">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇷🇸</span>
+                    <bdi class="language-switcher__name" lang="sr-Latn" dir="ltr">Srpski</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/hu/trust/security-governance/" lang="hu" hreflang="hu">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇭🇺</span>
+                    <bdi class="language-switcher__name" lang="hu" dir="ltr">Magyar</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ar/trust/security-governance/" lang="ar" hreflang="ar">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇦🇪</span>
+                    <bdi class="language-switcher__name" lang="ar" dir="rtl">العربية</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/zh/trust/security-governance/" lang="zh-Hans" hreflang="zh-Hans">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇨🇳</span>
+                    <bdi class="language-switcher__name" lang="zh-Hans" dir="ltr">简体中文</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ja/trust/security-governance/" lang="ja" hreflang="ja">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇯🇵</span>
+                    <bdi class="language-switcher__name" lang="ja" dir="ltr">日本語</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/sv/trust/security-governance/" lang="sv" hreflang="sv">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇸🇪</span>
+                    <bdi class="language-switcher__name" lang="sv" dir="ltr">Svenska</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/es/trust/security-governance/" lang="es" hreflang="es">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇪🇸</span>
+                    <bdi class="language-switcher__name" lang="es" dir="ltr">Español</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/ru/trust/security-governance/" lang="ru" hreflang="ru">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇷🇺</span>
+                    <bdi class="language-switcher__name" lang="ru" dir="ltr">Русский</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/hi/trust/security-governance/" lang="hi" hreflang="hi">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇮🇳</span>
+                    <bdi class="language-switcher__name" lang="hi" dir="ltr">हिन्दी</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/pt/trust/security-governance/" lang="pt-PT" hreflang="pt-PT">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇵🇹</span>
+                    <bdi class="language-switcher__name" lang="pt-PT" dir="ltr">Português</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/fi/trust/security-governance/" lang="fi-FI" hreflang="fi-FI">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇫🇮</span>
+                    <bdi class="language-switcher__name" lang="fi-FI" dir="ltr">Suomi</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/no/trust/security-governance/" lang="nb-NO" hreflang="nb-NO">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇳🇴</span>
+                    <bdi class="language-switcher__name" lang="nb-NO" dir="ltr">Norsk bokmål</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/nl/trust/security-governance/" lang="nl-NL" hreflang="nl-NL">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇳🇱</span>
+                    <bdi class="language-switcher__name" lang="nl-NL" dir="ltr">Nederlands</bdi>
+                    
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="language-switcher__option" href="/da/trust/security-governance/" lang="da-DK" hreflang="da-DK">
+                    <span class="language-switcher__flag" aria-hidden="true" dir="ltr">🇩🇰</span>
+                    <bdi class="language-switcher__name" lang="da-DK" dir="ltr">Dansk</bdi>
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          </details>
+        
+
+        <a class="header-search"
+           href="/sl/search/#site-search-query"
+           aria-label="Preišči javno spletno mesto"
+           data-header-search>
+          <svg class="header-search__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="10.75" cy="10.75" r="6.25"/>
+            <path d="m15.5 15.5 4.25 4.25"/>
+          </svg>
+          <span class="visually-hidden">Preišči javno spletno mesto</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main" tabindex="-1">
+    
+  
+    <nav class="breadcrumbs shell" aria-label="Navigacijska pot">
+      <ol role="list">
+        
+          <li>
+            
+              <a href="/sl/">Domov</a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/sl/trust/">Središče zaupanja</a>
+            
+          </li>
+        
+          <li aria-current="page">
+            
+              Varnost in upravljanje
+            
+          </li>
+        
+      </ol>
+    </nav>
+  
+  <section class="hero hero--detail" aria-labelledby="page-title">
+    <div class="shell hero__layout">
+      <div class="hero__content">
+        <p class="eyebrow ">Varnost in upravljanje</p>
+        <h1 id="page-title">Varnostne odločitve ostanejo v lasti strežnika in vezane na obseg.</h1>
+        <p class="hero__lead">Vidnost v brskalniku ni meja pooblastil. Zaščitene poti, aplikacijske storitve in pogoji repozitorija znova preverijo identiteto, Tenant, Project in kontekst dovoljenj, kadar to zahteva operacija.</p>
+        
+        <div class="hero__actions">
+          <a class="button button--primary" href="/sl/contact/">Obrnite se na ekipo za varnost <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="hero__visual">
+  
+  
+  
+  
+  
+  
+  
+    
+  <figure class="product-visual product-visual--boundary visual-story" data-visual-contract="permission-boundaries" data-visual-story>
+    <figcaption class="visually-hidden">Vidnost v brskalniku ni meja pooblastil. Zaščitene poti, aplikacijske storitve in pogoji repozitorija znova preverijo identiteto, Tenant, Project in kontekst dovoljenj, kadar to zahteva operacija.</figcaption>
+    <div class="scope-model">
+      <div class="scope-model__frame scope-model__frame--outer"><span>Varnost in upravljanje</span></div>
+      <div class="scope-model__frame scope-model__frame--middle" aria-hidden="true"></div>
+      <div class="scope-model__frame scope-model__frame--inner" aria-hidden="true"></div>
+      <ol role="list">
+        
+          <li>
+            <button class="scope-model__node is-active" type="button" data-story-step="0" aria-pressed="true">
+              <span aria-hidden="true">01</span>
+              <strong>Tenant in Project sta dejaven varnostni kontekst.</strong>
+            </button>
+          </li>
+        
+          <li>
+            <button class="scope-model__node" type="button" data-story-step="1" aria-pressed="false">
+              <span aria-hidden="true">02</span>
+              <strong>Register sej je po prijavi merodajen.</strong>
+            </button>
+          </li>
+        
+          <li>
+            <button class="scope-model__node" type="button" data-story-step="2" aria-pressed="false">
+              <span aria-hidden="true">03</span>
+              <strong>SAML je na voljo z izrecnimi mejami.</strong>
+            </button>
+          </li>
+        
+          <li>
+            <button class="scope-model__node" type="button" data-story-step="3" aria-pressed="false">
+              <span aria-hidden="true">04</span>
+              <strong>RLS in filtri med izvajanjem niso zamenljivi.</strong>
+            </button>
+          </li>
+        
+          <li>
+            <button class="scope-model__node" type="button" data-story-step="4" aria-pressed="false">
+              <span aria-hidden="true">05</span>
+              <strong>Skrivnosti ostanejo zunaj splošnih dokazil.</strong>
+            </button>
+          </li>
+        
+      </ol>
+    </div>
+    
+  <div class="visual-story__readout" data-typewriter-scope>
+    
+      <article class="visual-story__panel" data-story-panel="0">
+        <strong>Tenant in Project sta dejaven varnostni kontekst.</strong>
+        <p data-typewriter-copy="body">Tenant ločuje organizacije in podatke. Project določa članstvo, shemo in obseg izvajanja znotraj Tenant. Aktivni Project je podpisana in strežniško preverjena odločitev seje, ne zgolj prikazni filter.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="1">
+        <strong>Register sej je po prijavi merodajen.</strong>
+        <p data-typewriter-copy="body">Vsaka overjena zahteva se mora ujemati z dejavnim registrskim JTI, vezanim na akterja, stanjem Tenant in uporabnika, življenjsko dobo trenutnega pravilnika, časovno omejitvijo nedejavnosti ter kontekstom aktivnega Project. Napaka registra, manjkajoče gradivo za podpisovanje, preklic ali neujemanje identitete se varno zavrnejo, namesto da bi sistem uporabil anonimni ali zastareli kontekst brskalnika.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="2">
+        <strong>SAML je na voljo z izrecnimi mejami.</strong>
+        <p data-typewriter-copy="body">Implementirani so metapodatki SAML za Tenant, prijava in ACS, povezovanje zunanje identitete/JIT, pravilnik domene ter dokazilo MFA, ki ga potrdi IdP. Ustvarjanje končnih točk uporablja javni izvor v lasti strežnika, korelacija AuthnRequest pa kratkotrajno podpisano stanje, vezano na ponudnika in zahtevo.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="3">
+        <strong>RLS in filtri med izvajanjem niso zamenljivi.</strong>
+        <p data-typewriter-copy="body">RLS za Analytics je v lasti strežnika in zaščiten. Odjemalski filter med izvajanjem ne more ponarediti izvornih metapodatkov RLS, identitete predpomnilnika pa vključujejo obseg dovoljenj in RLS, namesto da bi se zanašale samo na besedilo SQL.</p>
+      </article>
+    
+      <article class="visual-story__panel" data-story-panel="4">
+        <strong>Skrivnosti ostanejo zunaj splošnih dokazil.</strong>
+        <p data-typewriter-copy="body">Poverilnice, žetoni, glave pooblastil, zasebni ključi in podpisani URL-ji ne sodijo v javne metapodatke, pozive klepeta ali splošne revizijske podatke. Zakrito besedilo ni uporabna poverilnica. Če potek zahteva enkratno razkritje poverilnice, je to omejeno, glede na konfiguracijo šifrirano med prenosom in hrambo, kratkotrajno ter zabeleženo brez trajnega shranjevanja skrivnosti v splošna dokazila.</p>
+      </article>
+    
+    <span class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" data-typewriter-status></span>
+  </div>
+  </figure>
+  </div>
+    </div>
+  </section>
+
+  
+  
+  <section class="content-section content-section--1 content-section--tenant-project-security" data-section-visual="tenant-project-security" aria-labelledby="section-1-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="01">
+      <p class="section-index" aria-hidden="true">01</p>
+      <h2 id="section-1-title">Tenant in Project sta dejaven varnostni kontekst.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Tenant ločuje organizacije in podatke. Project določa članstvo, shemo in obseg izvajanja znotraj Tenant. Aktivni Project je podpisana in strežniško preverjena odločitev seje, ne zgolj prikazni filter.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--2 content-section--session-registry" data-section-visual="session-registry" aria-labelledby="section-2-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="02">
+      <p class="section-index" aria-hidden="true">02</p>
+      <h2 id="section-2-title">Register sej je po prijavi merodajen.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Vsaka overjena zahteva se mora ujemati z dejavnim registrskim JTI, vezanim na akterja, stanjem Tenant in uporabnika, življenjsko dobo trenutnega pravilnika, časovno omejitvijo nedejavnosti ter kontekstom aktivnega Project. Napaka registra, manjkajoče gradivo za podpisovanje, preklic ali neujemanje identitete se varno zavrnejo, namesto da bi sistem uporabil anonimni ali zastareli kontekst brskalnika.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+          
+            
+            
+            <div class="content-grid content-grid--session-registry content-grid--statements" data-item-layout="statements" data-item-count="3">
+              
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">01</span><span class="content-item__copy">Sprememba Project je strežniška akcija, zaščitena pred CSRF, ki znova izda kontekst, ne da bi podaljšala veljavnost izvornega žetona ali pravilnika.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">02</span><span class="content-item__copy">Odjava je zahteva POST, zaščitena pred CSRF; sprememba ali ponastavitev gesla in izbris računa prekličejo dejavne seje.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">03</span><span class="content-item__copy">Zahteve JSON prejmejo strukturirano napako overjanja in izbris piškotka; navigacija v brskalniku pred preusmeritvijo počisti kontekst.</span></p></article>
+  
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--3 content-section--saml-policy" data-section-visual="saml-policy" aria-labelledby="section-3-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="03">
+      <p class="section-index" aria-hidden="true">03</p>
+      <h2 id="section-3-title">SAML je na voljo z izrecnimi mejami.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Implementirani so metapodatki SAML za Tenant, prijava in ACS, povezovanje zunanje identitete/JIT, pravilnik domene ter dokazilo MFA, ki ga potrdi IdP. Ustvarjanje končnih točk uporablja javni izvor v lasti strežnika, korelacija AuthnRequest pa kratkotrajno podpisano stanje, vezano na ponudnika in zahtevo.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+          
+            
+            
+            <div class="content-grid content-grid--saml-policy content-grid--statements" data-item-layout="statements" data-item-count="3">
+              
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">01</span><span class="content-item__copy">SAML ne ustvari članstva Project; uporabnik še vedno potrebuje odobren dostop do Tenant in Project.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">02</span><span class="content-item__copy">TOTP in WebAuthn na ravni aplikacije, obnovitveni izzivi ter celovit uporabniški vmesnik za seznam sej in preklic vseh sej trenutno niso podprte zmožnosti.</span></p></article>
+  
+    <article class="content-item"><p><span class="content-item__index" aria-hidden="true">03</span><span class="content-item__copy">Nepodprti pravilnik MFA z geslom se zavrne, namesto da bi se shranil kot navidezna kontrola.</span></p></article>
+  
+            </div>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--0 content-section--rls-cache-boundary" data-section-visual="rls-cache-boundary" aria-labelledby="section-4-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="04">
+      <p class="section-index" aria-hidden="true">04</p>
+      <h2 id="section-4-title">RLS in filtri med izvajanjem niso zamenljivi.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">RLS za Analytics je v lasti strežnika in zaščiten. Odjemalski filter med izvajanjem ne more ponarediti izvornih metapodatkov RLS, identitete predpomnilnika pa vključujejo obseg dovoljenj in RLS, namesto da bi se zanašale samo na besedilo SQL.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--1 content-section--secret-redaction" data-section-visual="secret-redaction" aria-labelledby="section-5-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="05">
+      <p class="section-index" aria-hidden="true">05</p>
+      <h2 id="section-5-title">Skrivnosti ostanejo zunaj splošnih dokazil.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Poverilnice, žetoni, glave pooblastil, zasebni ključi in podpisani URL-ji ne sodijo v javne metapodatke, pozive klepeta ali splošne revizijske podatke. Zakrito besedilo ni uporabna poverilnica. Če potek zahteva enkratno razkritje poverilnice, je to omejeno, glede na konfiguracijo šifrirano med prenosom in hrambo, kratkotrajno ter zabeleženo brez trajnega shranjevanja skrivnosti v splošna dokazila.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section content-section--2 content-section--iam-boundary" data-section-visual="iam-boundary" aria-labelledby="section-6-title">
+    <div class="shell content-section__layout">
+      <div class="content-section__heading">
+        
+        
+    <div class="section-title-row" data-section-title-row-index="06">
+      <p class="section-index" aria-hidden="true">06</p>
+      <h2 id="section-6-title">Trenutna moč IAM je navedena natančno.</h2>
+    </div>
+  
+      </div>
+      <div class="content-section__body">
+        
+          <p class="section-copy">Pogodbe dovoljenj za posamezne module obstajajo, vendar splošno trajno shranjevanje negativnih dovoljenj in združevanje DENY-wins za celotno platformo še nista dokončana. Vedenja MFA in dodatnega preverjanja v aplikaciji se ne sme nakazovati zunaj trenutnih kontrol ponudnika identitete in seje.</p>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+    <section class="related-pages" aria-labelledby="related-title">
+      <div class="shell">
+        <div class="related-pages__heading">
+          <p class="eyebrow ">Nadaljujte raziskovanje</p>
+          
+    <h2 id="related-title">Sorodne strani</h2>
+  
+        </div>
+        <div class="related-pages__grid">
+          
+            <a class="related-card" href="/sl/trust/architecture/">
+              <span class="related-card__eyebrow ">Arhitektura zaupanja</span>
+              <strong>Izrecne meje povezujejo platformo, ne da bi zabrisale odgovornost.</strong>
+              <p>advanexus je modularna platforma z ločenimi površinami za dostavo Tenant in skrbništvo, kontrolnimi in tenantnimi shrambami podatkov, čakalnimi vrstami delovnih obremenitev, adapterji shrambe ter zaupanja vredno mejo izvajalnega okolja Python.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+            <a class="related-card" href="/sl/trust/evidence-model/">
+              <span class="related-card__eyebrow ">Model dokazil</span>
+              <strong>Dokazilo je najmočnejše, ko ostanejo vidni njegov vir, obseg in omejitve.</strong>
+              <p>advanexus podprte kanonične dogodke in dokazila posameznih modulov poveže v preiskovalni model, ki upošteva dovoljenja, hkrati pa ohrani razliko med izvornim zapisom, projekcijo in človeškim potekom dela.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+            <a class="related-card" href="/sl/contact/">
+              <span class="related-card__eyebrow ">Kontakt</span>
+              <strong>Začnite z jasnim namenom in ustrezno količino konteksta.</strong>
+              <p>Začetno statično spletno mesto uporablja neposredno e-pošto namesto vgrajenega zaledja obrazca. Pošljite le podatke, potrebne za usmeritev pogovora, in ne vključujte poverilnic, produkcijskih podatkov ali občutljivih zapisov.</p>
+              <span aria-hidden="true">→</span>
+            </a>
+          
+        </div>
+      </div>
+    </section>
+  
+  
+  <section class="final-cta" aria-labelledby="final-cta-title">
+    <div class="shell final-cta__layout">
+      <div>
+        <p class="eyebrow ">Naslednji korak</p>
+        <h2 id="final-cta-title">Začnite s tokom, ki ne dopušča dvoumnosti.</h2>
+      </div>
+      <div>
+        <p>Vključite pomembne sisteme, odgovorne osebe, pravila, obveznosti dobave in zahteve glede dokazil.</p>
+        <a class="button button--ink" href="/sl/demo-request/">Pogovorimo se o kritičnem toku <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  
+  
+  
+  
+  <footer class="site-footer">
+    <div class="shell site-footer__layout">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="/sl/" aria-label="Domača stran advanexus">
+          
+  <img
+    class="brand__image brand__image--light"
+    src="/assets/dist/img/public/advanexus-wordmark-light.a39fb51538b6.webp"
+    width="640"
+    height="102"
+    alt="advanexus"
+    decoding="async"
+    loading="lazy" fetchpriority="low"
+  >
+        </a>
+        <div class="site-footer__brand-story" data-footer-brand-story>
+          <p class="brand-story__title"><strong>Napredek, ki ostaja povezan.</strong></p>
+          <p class="brand-story__body"><bdi dir="ltr">advanexus</bdi> združuje <bdi dir="ltr">advance</bdi> in <bdi dir="ltr">nexus</bdi>: napredovanje brez pretrganja vezi med podatki, odločitvami, odgovornostjo in dokazili.</p>
+        </div>
+        
+          <nav class="site-footer__orientation" aria-label="Napredek, ki ostaja povezan.">
+            <ul role="list">
+              
+                <li>
+                  <a href="/sl/platform/world/" data-footer-orientation-link="business">
+                    <span>Izberite situacijo, ki jo prepoznate</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </li>
+              
+              
+                <li>
+                  <a href="/sl/platform/system-map/" data-footer-orientation-link="system">
+                    <span>Kako deluje advanexus</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </li>
+              
+            </ul>
+          </nav>
+        
+        
+          <a class="text-link" href="https://live.advanexus.com/" rel="noopener noreferrer">Odpri platformo <span aria-hidden="true">↗</span><span class="visually-hidden"> Odpre aplikacijo advanexus</span></a>
+        
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Navigacija v nogi">
+        
+          
+          <section class="site-footer__group" aria-label="Platforma">
+            <h2 class="site-footer__group-heading" id="footer-group-1">Platforma</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-1-summary">Platforma</summary>
+              <ul role="list">
+                
+                  <li><a href="/sl/platform/">Pregled platforme</a></li>
+                
+                  <li><a href="/sl/platform/assurance/">advanexus Assurance</a></li>
+                
+                  <li><a href="/sl/platform/intelligence/">advanexus Intelligence</a></li>
+                
+                  <li><a href="/sl/platform/data-operations/">Podatkovne operacije</a></li>
+                
+                  <li><a href="/sl/platform/controlled-analytics/">Nadzorovana analitika</a></li>
+                
+                  <li><a href="/sl/advanexus/">advanexus</a></li>
+                
+                  <li><a href="/sl/platform/system-map/">Kako deluje advanexus</a></li>
+                
+                  <li><a href="/sl/platform/world/">Izberite situacijo, ki jo prepoznate</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="Rešitve">
+            <h2 class="site-footer__group-heading" id="footer-group-2">Rešitve</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-2-summary">Rešitve</summary>
+              <ul role="list">
+                
+                  <li><a href="/sl/solutions/">Rešitve</a></li>
+                
+                  <li><a href="/sl/industries/">Panoge</a></li>
+                
+                  <li><a href="/sl/integrations/">Integracije</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="Zaupanje in viri">
+            <h2 class="site-footer__group-heading" id="footer-group-3">Zaupanje in viri</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-3-summary">Zaupanje in viri</summary>
+              <ul role="list">
+                
+                  <li><a href="/sl/trust/">Središče zaupanja</a></li>
+                
+                  <li><a href="/sl/trust/capability-status/">Status zmožnosti</a></li>
+                
+                  <li><a href="/sl/trust/responsible-ai/">Odgovorna umetna inteligenca</a></li>
+                
+                  <li><a href="/sl/resources/">Viri</a></li>
+                
+                  <li><a href="/sl/faqs/">Pogosta vprašanja</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+          
+          <section class="site-footer__group" aria-label="Podjetje in pravne vsebine">
+            <h2 class="site-footer__group-heading" id="footer-group-4">Podjetje in pravne vsebine</h2>
+            <details class="site-footer__disclosure" data-footer-disclosure open>
+              <summary class="site-footer__summary" id="footer-group-4-summary">Podjetje in pravne vsebine</summary>
+              <ul role="list">
+                
+                  <li><a href="/sl/pricing/">Cene in sodelovanje</a></li>
+                
+                  <li><a href="/sl/company/">Podjetje</a></li>
+                
+                  <li><a href="/sl/contact/">Kontakt</a></li>
+                
+                  <li><a href="/sl/demo-request/">Pogovorimo se o kritičnem toku</a></li>
+                
+                  <li><a href="/sl/cookie-settings/">Nastavitve piškotkov</a></li>
+                
+                  <li><a href="/sl/privacy-policy/">Pravilnik o zasebnosti</a></li>
+                
+                  <li><a href="/sl/cookie-policy/">Pravilnik o piškotkih</a></li>
+                
+                  <li><a href="/sl/term-conditions/">Pogoji in določila</a></li>
+                
+                  <li><a href="/sl/accessibility/">Dostopnost</a></li>
+                
+                  <li><a href="/sl/sitemap/">Celoten zemljevid spletnega mesta</a></li>
+                
+              </ul>
+            </details>
+          </section>
+        
+      </nav>
+    </div>
+
+    <div class="shell site-footer__legal">
+      <p>&copy; 2026 advanexus. Vse pravice pridržane.</p>
+      <p>Delujte hitreje. Ohranite nadzor. Dokažite rezultat.</p>
+      <a href="mailto:info@advanexus.com">info@advanexus.com</a>
+    </div>
+  </footer>
+
+  
+  <a class="site-return-to-start" href="#page-title"
+     data-back-to-top data-visible="false" aria-label="Nazaj na vrh">
+    <span class="site-return-to-start__label" aria-hidden="true">Nazaj na vrh</span>
+    <span class="site-return-to-start__signal" aria-hidden="true">
+      <svg viewBox="0 0 48 48" focusable="false">
+        <circle class="site-return-to-start__track" cx="24" cy="24" r="20" pathLength="100"></circle>
+        <circle class="site-return-to-start__progress" data-back-to-top-progress
+                cx="24" cy="24" r="20" pathLength="100"></circle>
+        <path class="site-return-to-start__arrow" d="M24 34V14M16.5 21.5 24 14l7.5 7.5"></path>
+        <rect class="site-return-to-start__packet" x="21" y="29" width="6" height="6" rx="1"></rect>
+      </svg>
+    </span>
+  </a>
+</body>
+</html>
