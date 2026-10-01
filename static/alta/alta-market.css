@@ -1,0 +1,98 @@
+/* The market is context. The entry path and same-job comparison drive the decision. */
+.slide--market .slide-heading h2{font-size:38px;line-height:1.12}
+.market-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:36px;flex:1;align-items:center}
+.market-entry{display:grid;gap:22px;min-width:0}
+.market-context{background:var(--tint);border:1px solid var(--line);padding:20px 22px;border-radius:10px}
+.market-context figcaption{font-size:12px;line-height:1.5;color:var(--soft)}
+.market-total{display:block;color:var(--teal);font-size:36px;letter-spacing:-.045em;margin-top:10px;text-decoration:none;font-weight:500}
+.market-total>span{font-size:19px}
+.market-bar{height:13px;background:color-mix(in srgb,var(--ink) 15%,var(--paper));margin:14px 0 10px;border-radius:3px;overflow:hidden}
+.market-bar>span{display:block;width:24.425287%;height:100%;background:var(--teal)}
+.market-subset{display:flex;flex-direction:column;gap:4px;text-decoration:none}
+.market-subset strong{font-size:16px;font-weight:500}
+.market-subset span,.market-context>p{font-size:10px;line-height:1.5;color:var(--soft)}
+.market-context>p{margin-top:12px}
+.market-entry-path h3{font-size:16px;margin-bottom:12px}
+.market-entry-path li{display:grid;grid-template-columns:23px 1fr;gap:10px;position:relative;padding:10px 0}
+.entry-number{font-size:10px;color:var(--teal);padding-top:3px}
+.market-entry-path h4{font-size:13px;margin:0;font-weight:550}
+.market-entry-path p{font-size:11px;line-height:1.5;color:var(--soft);margin-top:4px}
+.entry-arrow{position:absolute;left:5px;bottom:-7px;color:var(--teal);font-size:14px}
+.market-alternatives{min-width:0}
+.market-alternatives>h3{font-size:18px}
+.rank-method{font-size:10px;line-height:1.5;color:var(--soft);max-width:620px;margin:7px 0 13px}
+.ranked-platforms{display:grid;grid-template-columns:1fr 1fr;gap:12px;grid-auto-flow:row}
+.ranked-platforms li{min-width:0;border:1px solid var(--line);border-radius:8px;background:var(--paper)}
+.ranked-platforms a{display:grid;grid-template-columns:14px 85px minmax(0,1fr);column-gap:9px;row-gap:4px;padding:12px;text-decoration:none;min-height:83px;align-content:center}
+.ranked-platforms a:hover{background:var(--tint);border-radius:8px}
+.similarity-number{color:var(--teal);font-size:10px;padding-top:4px;grid-row:1/3}
+.platform-identity{display:contents}
+.platform-identity .logo-plaque{grid-column:2;grid-row:1/3;align-self:center;width:85px;height:29px;padding:5px}
+.platform-identity .vendor-symbol{width:28px;justify-self:center}
+.platform-identity img{max-width:100%;max-height:100%;object-fit:contain}
+.platform-identity>strong{grid-column:3;font-size:12px;line-height:1.4;font-weight:550}
+.platform-identity>small{display:none}
+.platform-scale{grid-column:3;display:flex;flex-direction:column;gap:3px;min-width:0}
+.platform-scale strong{font-size:13px;line-height:1.3;font-weight:500;white-space:nowrap}
+.platform-scale small{font-size:10px;line-height:1.4;color:var(--soft)}
+.market-alternatives [data-open-competition]{margin-top:15px;width:100%;background:var(--tint);border-color:var(--teal)}
+@media(min-width:1000px){.slide--market .slide-heading h2>span{display:inline}.slide--market .slide-heading h2>span:first-child{margin-right:.18em}}
+@media(min-width:1000px) and (max-height:800px){
+ .slide--market{gap:14px;padding-top:14px;padding-bottom:14px}
+ .slide--market .slide-heading h2{font-size:30px;margin-top:9px}
+ .market-layout{gap:28px}
+ .market-entry{gap:15px}
+ .market-context{padding:14px 18px}
+ .market-context figcaption{font-size:11px}
+ .market-total{font-size:30px;margin-top:7px}
+ .market-bar{margin:10px 0 7px}
+ .market-context>p{margin-top:9px}
+ .market-entry-path h3{font-size:14px;margin-bottom:5px}
+ .market-entry-path li{padding:9px 0}
+ .market-entry-path h4{font-size:12px}
+ .market-entry-path p{font-size:10px}
+ .ranked-platforms{gap:8px}
+ .ranked-platforms a{min-height:64px;padding:8px;grid-template-columns:14px 78px minmax(0,1fr);column-gap:6px;row-gap:3px}
+ .platform-identity .logo-plaque{width:78px;height:25px}
+ .platform-identity .vendor-symbol{width:23px}
+ .platform-identity>strong{font-size:11px}
+ .platform-scale{gap:2px}
+ .platform-scale strong{font-size:11px}
+ .platform-scale small{font-size:9px}
+ .market-alternatives [data-open-competition]{margin-top:10px;min-height:34px;font-size:10px}
+ .slide--market .takeaway{font-size:15px}
+ .slide--market .slide-end{gap:9px}
+}
+@media(max-width:999px){
+ .market-layout{grid-template-columns:1fr;gap:30px}
+ .market-entry{grid-template-columns:1fr 1fr;gap:22px;align-items:center}
+ .market-context{padding:17px}
+ .market-total{font-size:30px}
+}
+@media(max-width:650px){
+ .slide--market .slide-heading h2{font-size:clamp(30px,8vw,42px)}
+ .market-entry{grid-template-columns:1fr;gap:24px}
+ .market-layout{gap:28px}
+ .market-context{padding:21px}
+ .market-context figcaption{font-size:12px}
+ .market-total{font-size:34px}
+ .market-context>p,.market-subset span{font-size:11px}
+ .market-entry-path h3{font-size:18px}
+ .market-entry-path h4{font-size:15px}
+ .market-entry-path p{font-size:12px}
+ .market-entry-path li{padding:15px 0;gap:12px}
+ .ranked-platforms{grid-template-columns:1fr;gap:12px}
+ .ranked-platforms a{min-height:103px;padding:14px;grid-template-columns:16px 1fr;gap:10px}
+ .platform-identity{display:grid;grid-template-columns:94px 1fr;column-gap:13px;align-items:center;min-width:0}
+ .platform-identity .logo-plaque{grid-column:1;width:94px;height:31px}
+ .platform-identity .vendor-symbol{width:30px}
+ .platform-identity>strong{grid-column:2;font-size:12px}
+ .platform-identity>small{display:block;grid-column:2;font-size:10px;line-height:1.5;color:var(--soft);margin-top:3px}
+ .platform-scale{grid-column:2;flex-direction:row;align-items:baseline;gap:12px;padding-top:9px;border-top:1px solid var(--line)}
+ .platform-scale strong{font-size:14px}
+ .platform-scale small{font-size:10px}
+ .rank-method{font-size:11px;line-height:1.6;margin-bottom:18px}
+ .market-alternatives>h3{font-size:20px}
+ .market-alternatives [data-open-competition]{margin-top:18px;min-height:44px}
+}
+@media print{.market-layout{grid-template-columns:.7fr 1.3fr}.ranked-platforms{grid-template-columns:1fr 1fr}.market-alternatives [data-open-competition]{display:none!important}}

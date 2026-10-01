@@ -1,0 +1,73 @@
+/* Business scope diagrams for the detailed competition appendix. */
+.competition-visuals{min-width:0}
+.competition-visual-block{border:1px solid var(--line);border-radius:12px;padding:22px;margin:22px 0;min-width:0;overflow-wrap:anywhere}
+.competition-visual-block figcaption,.competition-fallback .business-facets caption{font-size:20px;line-height:1.35;font-weight:550;letter-spacing:-.025em;text-align:left;margin:0 0 12px}
+.visual-intro{font-size:14px;line-height:1.6;color:var(--soft)}
+.competition-fallback .critical-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;list-style:none;padding:0;margin:20px 0 0}
+.critical-flow>li{position:relative;padding:16px 20px 16px 14px;background:var(--wash);border-radius:8px;min-width:0;margin:0!important;display:flex;flex-direction:column;gap:8px}
+.critical-flow .flow-position{color:var(--teal);font-size:11px}
+.critical-flow strong{font-size:14px;line-height:1.4}
+.critical-flow>li>span:not(.flow-position):not(.critical-arrow){font-size:12px;line-height:1.5;color:var(--soft)}
+.critical-flow .critical-arrow{position:absolute;right:-16px;top:50%;transform:translateY(-50%);font-size:18px;line-height:1;color:var(--teal);z-index:1}
+.critical-control{font-size:12px;line-height:1.5;border:1px solid var(--line);border-left:3px solid var(--teal);background:var(--tint);padding:12px 14px;margin-top:13px}
+.business-acceptance{margin-top:19px;display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center}
+.business-acceptance>strong{font-size:12px;color:var(--soft);line-height:1.5}
+.competition-fallback .business-acceptance ol{display:flex;gap:15px;align-items:center;justify-content:space-between;list-style:none;margin:0;padding:0}
+.business-acceptance li{font-size:12px;line-height:1.5;display:flex;gap:15px;align-items:center;margin:0!important}
+.business-acceptance li>span{color:var(--teal);font-size:17px;flex:none}
+.visual-note,.visual-method,.visual-sources{font-size:12px;line-height:1.6;color:var(--soft);margin-top:14px}
+.visual-method{margin:0 0 17px}
+.vendor-focus-map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:18px}
+.vendor-focus-band{display:flex;gap:12px;padding:17px 14px;border-top:3px solid var(--teal);background:var(--wash);border-radius:0 0 8px 8px;min-width:0}
+.vendor-focus-band:nth-child(2){border-top-color:color-mix(in srgb,var(--teal) 55%,var(--ink))}
+.vendor-focus-band:nth-child(3){border-top-color:var(--ink)}
+.focus-position{color:var(--soft);font-size:10px;padding-top:2px;flex:none}
+.competition-fallback .vendor-focus-band h4{font-size:14px;line-height:1.4}
+.vendor-focus-band p{font-size:12px;line-height:1.6;color:var(--soft);margin:7px 0 13px}
+.vendor-focus-band strong{display:block;font-size:12px;line-height:1.7;font-weight:500}
+.competition-fallback .business-facets{font-size:14px;line-height:1.55}
+.competition-fallback .business-facets th,.competition-fallback .business-facets td{padding:13px 9px}
+.competition-fallback .business-facets thead th{font-size:11px}
+.competition-fallback .business-facets tbody th{width:16%;font-size:13px}
+.business-facets th a{text-decoration:none}
+.business-facets th a:hover{text-decoration:underline}
+.business-facets th small{display:block;font-size:10px;font-weight:400;color:var(--soft);margin-top:6px}
+.business-facets .facets-baseline{background:var(--tint)}
+.business-facets .facets-baseline th{border-left:3px solid var(--teal)}
+.visual-opportunity{margin-top:18px;border-left:3px solid var(--teal);padding:12px 14px;background:var(--tint);font-size:14px;line-height:1.6}
+@media(max-width:850px){
+  .vendor-focus-map{grid-template-columns:1fr}
+  .vendor-focus-band{padding:15px 16px}
+  .business-acceptance{grid-template-columns:1fr;gap:10px}
+  .competition-fallback .business-acceptance ol{justify-content:flex-start}
+  .competition-fallback .business-facets{font-size:12px}
+}
+@media(max-width:650px){
+  .competition-visual-block{padding:17px 13px;margin:18px 0}
+  .competition-visual-block figcaption,.competition-fallback .business-facets caption{font-size:18px;margin-bottom:10px}
+  .visual-intro{font-size:12px}
+  .competition-fallback .critical-flow{grid-template-columns:1fr;gap:14px;margin-top:16px}
+  .critical-flow>li{padding:13px 14px 13px 45px;gap:5px}
+  .critical-flow .flow-position{position:absolute;left:14px;top:16px}
+  .critical-flow strong{font-size:13px}
+  .critical-flow .critical-arrow{top:auto;bottom:-14px;left:50%;right:auto;transform:translateX(-50%) rotate(90deg);font-size:17px}
+  .critical-control{font-size:11px;padding:10px 12px;margin-top:12px}
+  .competition-fallback .business-acceptance ol{display:grid;gap:10px}
+  .business-acceptance li{font-size:12px;align-items:flex-start;flex-direction:column;gap:7px}
+  .business-acceptance li>span{transform:rotate(90deg);margin-left:4px}
+  .visual-note,.visual-method,.visual-sources{font-size:11px;line-height:1.65}
+  .vendor-focus-map{gap:12px;margin-top:14px}
+  .competition-fallback .vendor-focus-band h4{font-size:13px}
+  .vendor-focus-band p,.vendor-focus-band strong{font-size:12px}
+  .competition-fallback .business-facets{display:block;position:relative}
+  .competition-fallback .business-facets caption{display:block}
+  .business-facets thead{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  .business-facets tbody{display:grid;gap:14px}
+  .business-facets tbody tr{display:block;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--paper)}
+  .competition-fallback .business-facets tbody th{display:block;width:auto;padding:13px 12px;border-bottom:1px solid var(--line);background:var(--wash);font-size:15px}
+  .competition-fallback .business-facets tbody td{display:grid;grid-template-columns:minmax(90px,.8fr) minmax(0,1.2fr);gap:12px;padding:10px 12px;font-size:12px;line-height:1.6}
+  .business-facets tbody td:before{content:attr(data-label);font-size:11px;font-weight:500;color:var(--ink)}
+  .business-facets tbody td:last-child{border-bottom:0}
+  .business-facets .facets-baseline td{background:var(--tint)}
+  .visual-opportunity{font-size:12px;padding:11px 12px}
+}

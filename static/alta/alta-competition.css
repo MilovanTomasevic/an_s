@@ -1,0 +1,89 @@
+/* Detailed market context stays separate from the six-slide pitch. */
+.competition-fallback{max-width:1160px;margin:40px auto;padding:34px clamp(20px,4vw,48px);font-size:14px;line-height:1.6;overflow-wrap:anywhere}
+.competition-fallback>h2{font-size:30px;line-height:1.2;margin-bottom:20px}
+.enhanced body>.competition-fallback{display:none}
+.enhanced.competition-unavailable body>.competition-fallback{display:block}
+#competition-dialog{width:min(1160px,calc(100% - 32px));max-height:90svh;padding:26px;overflow:auto;overscroll-behavior:contain}
+#competition-dialog .dialog-heading{align-items:flex-start;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:22px}
+#competition-dialog .dialog-heading h2{font-size:clamp(24px,3vw,31px);line-height:1.2;letter-spacing:-.035em}
+#competition-dialog [data-close-competition]{min-width:40px;min-height:40px}
+[data-competition-content]{min-width:0}
+[data-competition-content] .competition-fallback{max-width:none;margin:0;padding:0}
+.competition-detail-intro{font-size:15px;line-height:1.65;color:var(--soft);max-width:1020px}
+.competition-detail-section{margin-top:30px;min-width:0}
+.competition-fallback h3{font-size:20px;line-height:1.35;letter-spacing:-.025em;margin-bottom:12px}
+.competition-fallback h4{font-size:14px;line-height:1.4;font-weight:550;margin:0 0 5px}
+.competition-fallback p+p{margin-top:10px}
+.competition-fallback ul,.competition-fallback ol{padding-left:20px;margin:10px 0 0;list-style:disc}
+.competition-fallback ol{list-style:decimal}
+.competition-fallback li+li{margin-top:6px}
+.competition-fallback a{overflow-wrap:anywhere}
+.competition-fallback table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:14px;line-height:1.55}
+.competition-fallback table caption{text-align:left;font-size:18px;font-weight:550;line-height:1.4;margin-bottom:12px}
+.competition-fallback th,.competition-fallback td{padding:12px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.competition-fallback th{font-weight:550}
+.competition-fallback thead th{font-size:12px;line-height:1.45;color:var(--soft);background:var(--wash)}
+.competition-fallback tbody th{color:var(--ink)}
+.competition-fallback tbody td{color:var(--soft)}
+.competition-fallback table p+p{margin-top:7px}
+.market-detail,.buyer-detail{margin-top:22px;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:var(--wash);min-width:0}
+.market-detail h3,.buyer-detail h3{font-size:18px;margin-bottom:10px}
+.market-detail p,.buyer-detail p{color:var(--soft)}
+.buyer-detail dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:0}
+.buyer-detail dl>div{min-width:0}
+.buyer-detail dt{font-size:12px;font-weight:550;margin-bottom:5px}
+.buyer-detail dd{margin:0;color:var(--soft)}
+.competitor-profiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:18px}
+.competitor-profile{min-width:0;border:1px solid var(--line);border-radius:12px;padding:22px;background:var(--paper)}
+.competitor-profile header{display:flex;align-items:center;gap:16px;margin-bottom:15px}
+.competitor-profile header h3{margin:0;font-size:19px}
+.competitor-profile .competitor-logo{flex:none;width:116px;height:48px}
+.company-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:13px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:14px 0;font-variant-numeric:tabular-nums}
+.company-facts>div{min-width:0}
+.company-facts dt{font-size:11px;line-height:1.5;color:var(--soft);margin-bottom:4px}
+.company-facts dd{font-size:14px;line-height:1.5;margin:0}
+.company-facts a{font-size:12px;color:var(--soft)}
+.profile-assessment{font-size:14px;line-height:1.6}
+.profile-assessment>div+div{margin-top:15px}
+.profile-assessment p{color:var(--soft)}
+.competitor-profile>p{color:var(--soft)}
+.competitor-profile>p:last-child{font-size:12px;margin-top:14px}
+[data-open-competition]{min-height:40px;font-size:12px;line-height:1.4;display:inline-flex;align-items:center;justify-content:center;gap:10px}
+@media(max-width:850px){
+  .competitor-profiles{grid-template-columns:1fr}
+  .buyer-detail dl{grid-template-columns:1fr;gap:14px}
+}
+@media(max-width:650px){
+  .competition-fallback{margin:25px auto;padding:24px 20px;font-size:12px;line-height:1.65}
+  .competition-fallback>h2{font-size:25px;margin-bottom:17px}
+  #competition-dialog{width:calc(100% - 20px);max-height:90svh;padding:18px 14px}
+  #competition-dialog .dialog-heading{gap:12px;padding-bottom:14px;margin-bottom:18px}
+  #competition-dialog .dialog-heading h2{font-size:22px}
+  #competition-dialog [data-close-competition]{min-width:36px;min-height:36px;padding:7px}
+  .competition-detail-intro{font-size:13px}
+  .competition-detail-section{margin-top:25px}
+  .competition-fallback h3{font-size:18px;margin-bottom:10px}
+  .competition-fallback h4{font-size:12px}
+  .competition-fallback table{font-size:12px;line-height:1.6}
+  .competition-fallback table caption{font-size:16px;margin-bottom:10px}
+  .competition-fallback th,.competition-fallback td{padding:10px 6px}
+  .competition-fallback thead th{font-size:11px}
+  .market-detail,.buyer-detail{padding:16px 14px;margin-top:19px}
+  .market-detail h3,.buyer-detail h3{font-size:16px}
+  .competitor-profiles{gap:16px}
+  .competitor-profile{padding:17px 14px}
+  .competitor-profile header{gap:12px;margin-bottom:12px;flex-wrap:wrap}
+  .competitor-profile header h3{font-size:17px}
+  .competitor-profile .competitor-logo{width:108px;height:42px}
+  .company-facts{gap:12px;padding:11px 0;margin:12px 0}
+  .company-facts dt{font-size:10px}
+  .company-facts dd{font-size:12px}
+  .company-facts a{font-size:11px}
+  .profile-assessment{font-size:12px;line-height:1.65}
+  .profile-assessment>div+div{margin-top:12px}
+  .competitor-profile>p:last-child{font-size:11px}
+  [data-open-competition]{width:100%;min-height:42px}
+}
+@media print{
+  .competition-fallback,[data-open-competition]{display:none!important}
+}

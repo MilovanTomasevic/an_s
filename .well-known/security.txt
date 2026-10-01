@@ -1,0 +1,5 @@
+Contact: mailto:info@advanexus.com
+Canonical: https://www.advanexus.com/.well-known/security.txt
+Expires: 2027-07-15T00:00:00Z
+Preferred-Languages: en-GB, en-US, de, sl, sr-Latn, hu, ar, zh-Hans, ja, sv, es, ru, hi, pt-PT, fi-FI, nb-NO, nl-NL, da-DK
+Policy: https://www.advanexus.com/trust/security-governance/

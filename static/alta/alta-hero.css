@@ -1,0 +1,59 @@
+/* The cube explains the platform; the six layers form one compact business path. */
+.slide--platform{gap:18px;padding-top:18px;padding-bottom:16px}
+.slide--platform .hero-layout{grid-template-columns:.95fr 1.05fr;gap:24px;padding:0;flex:1}
+.slide--platform .value-list{margin-top:24px;gap:17px}
+.slide--platform .value-mark{font-size:18px;line-height:1.15}
+.slide--platform .value-list h3{font-size:16px}
+.slide--platform .platform-flow--horizontal{border:0;border-radius:0;overflow:visible}
+.slide--platform .platform-flow--horizontal figcaption{background:none;padding:0 0 10px;font-size:10px;color:var(--soft);letter-spacing:.08em}
+.slide--platform .platform-flow--horizontal ol{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:21px;padding:0}
+.slide--platform .platform-flow--horizontal li{display:block;padding:0;min-width:0}
+.slide--platform .platform-flow--horizontal .flow-number{border:0;background:none;display:block;width:auto;height:auto;font-size:10px;margin-bottom:5px}
+.slide--platform .platform-flow--horizontal h3{font-size:13px;line-height:1.4}
+.slide--platform .platform-flow--horizontal p{font-size:11px;line-height:1.45;margin-top:4px}
+.slide--platform .platform-flow--horizontal li:not(:last-child):before{display:none}
+.slide--platform .platform-flow--horizontal .flow-arrow{position:absolute;right:-14px;top:0;font-size:17px;margin:0}
+.slide--platform .platform-flow--horizontal .flow-rail{border:0;background:none;padding:0;font-size:11px;margin:12px 0 0;color:var(--soft)}
+.slide--platform .slide-end{gap:10px}
+.slide--platform .takeaway{display:none}
+@media(min-width:1000px) and (max-height:800px){
+ .slide--platform{gap:8px;padding-top:9px;padding-bottom:7px}
+ .slide--platform h1{font-size:43px}
+ .slide--platform .lead{font-size:16px;margin-top:12px;line-height:1.5}
+ .slide--platform .value-list{margin-top:20px;gap:13px}
+ .slide--platform .value-list h3{font-size:14px}
+ .slide--platform .value-list p{font-size:11px}
+ .slide--platform .platform-flow--horizontal figcaption{padding-bottom:8px}
+ .slide--platform .platform-flow--horizontal ol{gap:17px}
+ .slide--platform .platform-flow--horizontal h3{font-size:12px}
+ .slide--platform .platform-flow--horizontal .flow-rail{margin-top:9px}
+ .slide--platform .platform-flow--horizontal .flow-arrow{right:-12px;font-size:15px}
+ .slide--platform .takeaway{font-size:13px}
+ .slide--platform .footnote{font-size:9px;padding-top:8px}
+}
+@media(max-width:999px){
+ .slide--platform .hero-layout{grid-template-columns:1fr;gap:20px}
+ .slide--platform .value-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+ .slide--platform .value-list>div{gap:8px}
+ .slide--platform .platform-flow--horizontal ol{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 28px}
+ .slide--platform .platform-flow--horizontal h3{font-size:14px}
+ .slide--platform .platform-flow--horizontal p{font-size:12px}
+ .slide--platform .platform-flow--horizontal .flow-rail{font-size:12px;margin-top:17px}
+ .slide--platform .platform-flow--horizontal li:nth-child(3) .flow-arrow{display:none}
+}
+@media(max-width:650px){
+ .slide--platform .value-list{grid-template-columns:1fr;gap:18px}
+ .slide--platform .value-list>div{gap:12px}
+ .slide--platform .value-list h3{font-size:16px}
+ .slide--platform .hero-layout{gap:12px}
+ .slide--platform .platform-flow--horizontal figcaption{font-size:10px;padding:0 0 16px}
+ .slide--platform .platform-flow--horizontal ol{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 27px}
+ .slide--platform .platform-flow--horizontal .flow-number{font-size:11px;margin-bottom:7px}
+ .slide--platform .platform-flow--horizontal .flow-arrow{display:none}
+ .slide--platform .platform-flow--horizontal h3{font-size:14px}
+ .slide--platform .platform-flow--horizontal p{font-size:12px;line-height:1.6}
+ .slide--platform .takeaway{display:none}
+}
+@media print{.slide--platform .hero-layout{grid-template-columns:1fr 1fr}.slide--platform .platform-flow--horizontal ol{grid-template-columns:repeat(6,minmax(0,1fr))}.slide--platform .platform-flow--horizontal .flow-arrow,.slide--platform .platform-flow--horizontal li:nth-child(3) .flow-arrow{display:block}}
+
+@media(max-width:650px){.slide--platform .hero-story{display:contents}.slide--platform .hero-story h1{order:0}.slide--platform .hero-story>.lead{order:1;margin-top:0}.slide--platform .alta-cube{order:2}.slide--platform .value-list{order:3;margin-top:4px}}

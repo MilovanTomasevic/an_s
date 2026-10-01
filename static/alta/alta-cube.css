@@ -1,0 +1,77 @@
+/* ALTA reuses the public advanexus cube without a visual background panel. */
+.alta-cube {
+  --brand-teal: var(--teal);
+  --brand-white: var(--ink);
+  --brand-surface: var(--line);
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+  align-self: center;
+  color: var(--ink);
+  background: transparent;
+}
+.alta-cube .home-cube,
+.alta-cube .home-cube .axc,
+.alta-cube .axc-stage,
+.alta-cube .axc-stage canvas,
+.alta-cube .axc-fallback {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.alta-cube .home-cube .axc {
+  block-size: 500px;
+  min-block-size: 500px;
+  max-block-size: 500px;
+  color: var(--ink);
+  color-scheme: inherit;
+  font-family: inherit;
+}
+.alta-cube .home-cube .axc-mobile-label {
+  padding: 3px 4px;
+  font-size: 13px;
+  color: var(--ink);
+  text-shadow: 0 0 3px var(--paper), 0 0 3px var(--paper);
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.alta-cube .home-cube .axc-mobile-label[data-layer="1"] { color: var(--teal); }
+.alta-cube .axc-mobile-label::before { background: var(--teal); }
+.alta-cube .home-cube .axc-fallback { inset: 56px 12px 24px; }
+.alta-cube .axc-fallback p,
+.alta-cube .home-cube .axc-fallback li { color: var(--ink); }
+.alta-cube .axc-fallback li { background: transparent; }
+@media (min-width: 1000px) {
+  .alta-cube {
+    position: relative;
+    align-self: stretch;
+    min-block-size: 500px;
+  }
+  .alta-cube .home-cube {
+    position: absolute;
+    inset: 0;
+    block-size: 100%;
+  }
+  .alta-cube .home-cube .axc {
+    block-size: 100%;
+    min-block-size: 0;
+    max-block-size: none;
+  }
+}
+@media (min-width: 1000px) and (max-height: 800px) {
+  .alta-cube {
+    min-block-size: clamp(390px, calc(100svh - 330px), 470px);
+  }
+}
+@media (max-width: 650px) {
+  .alta-cube {
+    width: calc(100% + 40px);
+    margin-inline: -20px;
+  }
+  .alta-cube .home-cube .axc {
+    block-size: 115vw;
+    min-block-size: 360px;
+    max-block-size: none;
+  }
+}

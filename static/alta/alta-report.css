@@ -1,0 +1,71 @@
+/* Local illustrative report; artwork and colours follow the parent deck. */
+#report-dialog{width:min(980px,calc(100% - 32px));max-height:88svh;padding:26px;overscroll-behavior:contain}
+#report-dialog .dialog-heading{align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:18px}
+#report-dialog .dialog-heading h2{font-size:clamp(23px,3vw,30px);line-height:1.2;letter-spacing:-.035em}
+[data-report-content]{margin-top:20px;font-variant-numeric:tabular-nums}
+.report-intro{color:var(--soft);font-size:14px;line-height:1.6}
+.report-summary{margin-top:15px;font-size:16px;font-weight:500;line-height:1.6}
+.report-effect{padding:14px 16px;margin-top:15px;border-left:3px solid var(--teal);background:var(--tint);font-size:14px;line-height:1.5}
+.report-overview{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.report-section{margin-top:25px;min-width:0}
+.report-section h3,.report-table caption{font-size:17px;font-weight:550;line-height:1.4;letter-spacing:-.02em;text-align:left;margin-bottom:10px}
+.report-table{width:100%;border-collapse:collapse;font-size:13px;line-height:1.5}
+.report-table th,.report-table td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+.report-table th{font-weight:500}
+.report-table thead th{font-size:11px;color:var(--soft);background:var(--wash)}
+.report-table td{font-variant-numeric:tabular-nums;white-space:nowrap}
+.report-table tbody th{width:60%;color:var(--soft)}
+.report-overview .report-table tbody th{width:auto}
+.report-table td:last-child{text-align:right}
+.report-formulas{display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;font-size:12px;line-height:1.55}
+.report-formulas>div{min-width:0}
+.report-formulas dt{font-weight:500;color:var(--soft)}
+.report-formulas dd{margin:3px 0 0;overflow-wrap:anywhere}
+.report-rounding{margin-top:12px;color:var(--soft);font-size:11px;line-height:1.5}
+.report-assumptions{padding:18px;background:var(--wash);border-radius:8px}
+.report-assumptions ul{padding-left:18px;list-style:disc;color:var(--soft);font-size:12px;line-height:1.6}
+.report-assumptions li+li{margin-top:6px}
+.report-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px;border-top:1px solid var(--line);margin-top:22px;padding-top:18px}
+[data-calculate]{margin-top:0;background:var(--teal);color:#343541;border-color:var(--teal);font-size:13px;font-weight:550;min-height:42px}
+[data-calculate]:hover{filter:brightness(.95)}
+[data-print-report],[data-download-report]{min-height:42px;font-size:12px}
+@media(max-width:650px){
+  #report-dialog{width:calc(100% - 20px);max-height:90svh;padding:18px 14px}
+  #report-dialog .dialog-heading{gap:12px}
+  #report-dialog .dialog-heading h2{font-size:22px}
+  .report-overview,.report-formulas{grid-template-columns:1fr;gap:0}
+  .report-formulas{gap:12px}
+  .report-table{font-size:12px}
+  .report-table th,.report-table td{padding:8px 5px}
+  .report-table td{white-space:normal;overflow-wrap:anywhere}
+  .report-table tbody th{width:57%}
+  .report-section{margin-top:22px}
+  .report-intro,.report-effect{font-size:13px}
+  .report-summary{font-size:15px}
+  .report-assumptions{padding:14px}
+  .report-actions{justify-content:stretch}
+  .report-actions button{flex:1}
+  [data-calculate]{width:100%}
+}
+@media print{
+  body.printing-report> :not(#report-dialog){display:none!important}
+  body.printing-report #report-dialog{display:block!important;position:static!important;inset:auto!important;overflow:visible!important;max-height:none!important;height:auto!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;background:#fff!important;color:#343541!important;box-shadow:none!important;contain:none!important}
+  body.printing-report #report-dialog::backdrop{display:none!important}
+  body.printing-report #report-dialog [data-close-report],body.printing-report #report-dialog .report-actions,body.printing-report #report-dialog [data-print-report],body.printing-report #report-dialog [data-download-report]{display:none!important}
+  body.printing-report #report-dialog .dialog-heading{padding-bottom:12px}
+  body.printing-report #report-dialog .dialog-heading h2{font-size:24px}
+  body.printing-report [data-report-content]{margin-top:12px}
+  body.printing-report .report-intro,body.printing-report .report-effect{font-size:10pt;line-height:1.4}
+  body.printing-report .report-summary{font-size:11pt;line-height:1.45;margin-top:12px}
+  body.printing-report .report-effect{padding:10px 12px;margin-top:12px}
+  body.printing-report .report-overview{grid-template-columns:1fr 1fr;gap:18px}
+  body.printing-report .report-section{margin-top:17px;break-inside:avoid}
+  body.printing-report .report-section h3,body.printing-report .report-table caption{font-size:12pt;margin-bottom:7px}
+  body.printing-report .report-table{font-size:9pt;line-height:1.4}
+  body.printing-report .report-table th,body.printing-report .report-table td{padding:6px 7px}
+  body.printing-report .report-table td{white-space:normal}
+  body.printing-report .report-formulas{grid-template-columns:1fr 1fr;gap:9px 20px;font-size:8.5pt;line-height:1.4}
+  body.printing-report .report-assumptions{padding:12px}
+  body.printing-report .report-assumptions ul{font-size:8.5pt;line-height:1.45}
+  body.printing-report .report-assumptions li+li{margin-top:3px}
+}
